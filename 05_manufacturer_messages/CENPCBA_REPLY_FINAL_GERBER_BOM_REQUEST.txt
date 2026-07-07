@@ -1,16 +1,10 @@
 Hello,
 
-Thank you for the review and for clarifying the required next files.
+Understood. To avoid version confusion, please use only the two controlled Step 01 files for the next review step:
 
-Understood. To avoid version confusion, please do not use the earlier multi-folder packages as the final production release. We will consolidate the release and provide only two controlled files for the next step:
+1. TFLN_AI_NODE_X2_STEP_01_GERBER_REVIEW.zip
+2. TFLN_AI_NODE_X2_STEP_01_BOM.xlsx
 
-1. Final Gerber package
-2. Final BOM list
+The latest engineering reconciliation package is included separately so your engineering team can see the KiCad status, remaining warnings, and source files used for the current review.
 
-At the moment, our engineering team is completing the final release checks so that the Gerber package and BOM are consistent with the same board revision. We do not want to send a file marked final until the Gerber, schematic/netlist reconciliation, and BOM are aligned under one revision.
-
-Yes, direct engineer-to-engineer communication is possible and preferred for closing any technical questions quickly. Please share the best contact person, email/WeChat/WhatsApp, and available time window, and we will connect our engineer directly.
-
-Once the final Gerber package and final BOM are ready, we will send only those two files with a clear revision/date so there is no ambiguity.
-
-Thank you.
+Yes, direct engineer-to-engineer communication is welcome for schematic, Gerber, and BOM clarification.

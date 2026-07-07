@@ -19,6 +19,6 @@ Current closure state:
 - KiCad DRC: 32 open violations
 - Unconnected items: 0
 - Schematic parity: 564 open items
-- Final procurement BOM: release pending until ECO/parity closure and component signoff
+- Final procurement BOM: under engineering review until ECO/parity closure and component signoff
 
 Please use `00_read_me/ALL_TEMPLATE_OUTPUTS_INDEX.pdf` as the top-level map and `17_release_gate/RELEASE_GATE_CHECKLIST.pdf` as the release gate.

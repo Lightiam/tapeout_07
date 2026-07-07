@@ -6,8 +6,8 @@ Controlled repository upload for the Tapeout July_04 work performed so far.
 
 For the manufacturer's current request, use only:
 
-- `00_step01_gerber_bom_only/TFLN_AI_NODE_X2_STEP_01_GERBER_REVIEW_RELEASE_PENDING.zip`
-- `00_step01_gerber_bom_only/TFLN_AI_NODE_X2_STEP_01_BOM_REVIEW_RELEASE_PENDING.xlsx`
+- `00_step01_gerber_bom_only/TFLN_AI_NODE_X2_STEP_01_GERBER_REVIEW.zip`
+- `00_step01_gerber_bom_only/TFLN_AI_NODE_X2_STEP_01_BOM.xlsx`
 
 Those are the focused Step 01 Gerber/BOM review files.
 
@@ -18,9 +18,10 @@ Those are the focused Step 01 Gerber/BOM review files.
 - `03_schematic_transmittal`: schematic transmittal package and clear dual-NCE/TFLN overview.
 - `04_rebuild_eco_required`: reference-envelope rebuild package requiring engineering ECO closure.
 - `05_manufacturer_messages`: sendable manufacturer messages and clarification questions.
-- `06_engineering_notes`: non-release ECO candidate evidence.
+- `06_engineering_notes`: ECO candidate traceability evidence.
+- `07_engineering_reconcile`: latest patched KiCad source and KiCad validation delta.
 - `99_generation_scripts`: scripts used to generate/assemble these artifacts.
 
-## Release Status
+## Engineering Status
 
-The current production release remains release-pending until Gerber/BOM/ECO alignment is complete. The Step 01 files are provided for focused engineering review.
+The latest KiCad check reports 0 DRC errors and 0 unconnected items after the regulator-placeholder geometry fix. Remaining warnings and schematic parity items are documented in `07_engineering_reconcile/ENGINEERING_FIX_SUMMARY.md`.

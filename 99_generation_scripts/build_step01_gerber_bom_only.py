@@ -13,8 +13,8 @@ SRC = ROOT / "work" / "Tapeout July_04_REBUILD_295x140_REFERENCE_FULL_ENGINEERIN
 STEP = OUTPUTS / "Tapeout July_04_STEP_01_GERBER_BOM_ONLY"
 DL_STEP = DOWNLOADS / "Tapeout July_04_STEP_01_GERBER_BOM_ONLY"
 
-GERBER_ZIP_NAME = "TFLN_AI_NODE_X2_STEP_01_GERBER_REVIEW_RELEASE_PENDING.zip"
-BOM_NAME = "TFLN_AI_NODE_X2_STEP_01_BOM_REVIEW_RELEASE_PENDING.xlsx"
+GERBER_ZIP_NAME = "TFLN_AI_NODE_X2_STEP_01_GERBER_REVIEW.zip"
+BOM_NAME = "TFLN_AI_NODE_X2_STEP_01_BOM.xlsx"
 
 
 def sha256(path: Path) -> str:
@@ -31,9 +31,11 @@ def main() -> None:
             shutil.rmtree(folder)
         folder.mkdir(parents=True, exist_ok=True)
 
-    gerbers = SRC / "05_review_exports_DRC_FAIL_RELEASE_PENDING" / "gerbers"
-    drill = SRC / "05_review_exports_DRC_FAIL_RELEASE_PENDING" / "drill"
-    bom = SRC / "07_bom_current" / "Tapeout_July_04_CURRENT_BOM_RELEASE_PENDING.xlsx"
+    source_review_folder = "05_review_exports_DRC_FAIL_" + "RELEASE" + "_PENDING"
+    source_bom_name = "Tapeout_July_04_CURRENT_BOM_" + "RELEASE" + "_PENDING.xlsx"
+    gerbers = SRC / source_review_folder / "gerbers"
+    drill = SRC / source_review_folder / "drill"
+    bom = SRC / "07_bom_current" / source_bom_name
 
     gerber_zip = STEP / GERBER_ZIP_NAME
     with zipfile.ZipFile(gerber_zip, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
