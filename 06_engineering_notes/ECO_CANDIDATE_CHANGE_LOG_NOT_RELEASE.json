@@ -1,0 +1,102 @@
+[
+  {
+    "Item": "CR32",
+    "Action": "move_footprint",
+    "Candidate ECO": "at 267 155"
+  },
+  {
+    "Item": "DR32",
+    "Action": "move_footprint",
+    "Candidate ECO": "at 290 155"
+  },
+  {
+    "Item": "CL32",
+    "Action": "move_footprint",
+    "Candidate ECO": "at 43 155"
+  },
+  {
+    "Item": "DL32",
+    "Action": "move_footprint",
+    "Candidate ECO": "at 20 155"
+  },
+  {
+    "Item": "JR32",
+    "Action": "move_footprint",
+    "Candidate ECO": "at 296 154.8"
+  },
+  {
+    "Item": "JL32",
+    "Action": "move_footprint",
+    "Candidate ECO": "at 14 154.8"
+  },
+  {
+    "Item": "ULREG",
+    "Action": "move_footprint",
+    "Candidate ECO": "at 60 155"
+  },
+  {
+    "Item": "URREG",
+    "Action": "move_footprint",
+    "Candidate ECO": "at 230 155"
+  },
+  {
+    "Item": "MH5",
+    "Action": "move_footprint",
+    "Candidate ECO": "at 299 89"
+  },
+  {
+    "Item": "eba88c54-09da-43cd-a155-8b7d59a4d3fd",
+    "Action": "trim_no_net_copper_graphic",
+    "Candidate ECO": "start (85.0, 45.0) end (85.0, 17.8)"
+  },
+  {
+    "Item": "530e62ba-4f27-4d27-b194-9e9384dd78cf",
+    "Action": "trim_no_net_copper_graphic",
+    "Candidate ECO": "start (128.0, 17.8) end (135.0, 23.0)"
+  },
+  {
+    "Item": "25cb34e2-f4c6-4868-8b18-936d8329489c",
+    "Action": "trim_no_net_copper_graphic",
+    "Candidate ECO": "start (182.0, 17.8) end (175.0, 23.0)"
+  },
+  {
+    "Item": "8a095189-51e1-472e-9a72-61394f7af9c0",
+    "Action": "trim_no_net_copper_graphic",
+    "Candidate ECO": "start (225.0, 45.0) end (225.0, 17.8)"
+  },
+  {
+    "Item": "01c417a9-b8da-464e-8e2b-ff9aeef07dcf",
+    "Action": "trim_no_net_copper_graphic",
+    "Candidate ECO": "start (145.0, 156.0) end (165.0, 156.0)"
+  },
+  {
+    "Item": "416262e2-e666-4a3c-b211-f7758c9e07cc",
+    "Action": "trim_no_net_copper_graphic",
+    "Candidate ECO": "start (145.0, 156.0) end (145.0, 149.0)"
+  },
+  {
+    "Item": "2b099dd7-c910-413d-8503-0a15f8fa7dbd",
+    "Action": "trim_no_net_copper_graphic",
+    "Candidate ECO": "start (165.0, 156.0) end (165.0, 149.0)"
+  },
+  {
+    "Item": "dbd50bb0-651b-41dc-87d4-febc2dfb307b",
+    "Action": "move_silkscreen_edge_segment_to_fab",
+    "Candidate ECO": "F.SilkS -> F.Fab"
+  },
+  {
+    "Item": "9c9f8483-e325-4a08-8883-c7a5044c4772",
+    "Action": "move_silkscreen_edge_segment_to_fab",
+    "Candidate ECO": "F.SilkS -> F.Fab"
+  },
+  {
+    "Item": "41497c1f-a491-4786-a1c1-d549eee9a254",
+    "Action": "move_silkscreen_edge_segment_to_fab",
+    "Candidate ECO": "F.SilkS -> F.Fab"
+  },
+  {
+    "Item": "ed642785-5dee-4c5c-b9e6-85b096de2b74",
+    "Action": "move_silkscreen_edge_segment_to_fab",
+    "Candidate ECO": "F.SilkS -> F.Fab"
+  }
+]

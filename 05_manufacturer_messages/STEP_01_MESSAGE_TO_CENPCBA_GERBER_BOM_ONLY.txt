@@ -1,0 +1,16 @@
+Hello,
+
+Understood. To avoid confusion, we will move step by step.
+
+For Step 01, please review only these two files:
+
+1. TFLN_AI_NODE_X2_STEP_01_GERBER_REVIEW_RELEASE_PENDING.zip
+2. TFLN_AI_NODE_X2_STEP_01_BOM_REVIEW_RELEASE_PENDING.xlsx
+
+Please ignore all previous multi-folder packages and earlier versions.
+
+Important note: these files are provided for focused Gerber/BOM engineering review first. We are still closing final release checks and will issue the final production release only after Gerber/BOM/ECO alignment is complete.
+
+Yes, direct engineer-to-engineer communication is possible. Please share the engineer contact and preferred communication method, and we will coordinate directly.
+
+Thank you.

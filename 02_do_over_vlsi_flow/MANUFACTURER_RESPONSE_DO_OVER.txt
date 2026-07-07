@@ -1,0 +1,32 @@
+Please use the attached Tapeout July_04 do-over flow package as the ECO closure guide.
+
+We converted your VLSI design-flow template into a board-specific release flow for TFLN_AI_NODE_X2. The package shows the required path:
+
+1. Specification reset and real server chassis mechanical signoff.
+2. Front-end schematic closure.
+3. Analog/TFLN optical and RF/bias review.
+4. Mixed-signal NCE-to-TFLN and service-interface review.
+5. BOM engineering and final procurement BOM signoff.
+6. Back-end PCB ECO.
+7. Physical verification closure.
+8. DFM/DFA review.
+9. Regeneration of all release outputs.
+10. Production release approval.
+
+The schematic reference is included. For the dual NCE and TFLN visibility question, open:
+`05_schematic_reference/TFLN_AI_NODE_X2_CLEAR_DUAL_NCE_TFLN_SCHEMATIC_OVERVIEW.pdf`
+
+That overview identifies:
+- U1 = NCE-A die
+- U4 = NCE-B die
+- U3 = TFLN_PIC_4xMZM photonic IC
+- U50-U53 = RF driver chain
+- U30-U35 and U40-U45 = HBM groups for the two NCE dies
+
+Current open engineering items are:
+- KiCad DRC: 32 open violations
+- Unconnected items: 0
+- Schematic parity: 564 open items
+- BOM: final procurement BOM to be signed after ECO/parity closure
+
+Please use `03_engineering_instructions/CURRENT_GAPS_TO_FLOW_MAP.csv` and `04_release_outputs_required/RELEASE_OUTPUTS_REQUIRED.csv` as the action checklist.

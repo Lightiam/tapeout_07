@@ -1,0 +1,919 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-07-06T21:51:16",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.3",
+    "schematic_parity": [],
+    "source": "TFLN_AI_NODE_X2_SERVER_CHASSIS_IO.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [L_OPT_BIAS_31] of JL32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 154.8
+                    },
+                    "uuid": "d76d1053-3d75-4dd0-9ae7-d3b485731dc7"
+                },
+                {
+                    "description": "Track [L_OPT_BIAS_31] on EO_Bias_Monitor, length 12.2500 mm",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 156.0
+                    },
+                    "uuid": "7998b89e-40a7-4003-bda4-d44ce59e1c40"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [L_OPT_BIAS_31] on EO_Bias_Monitor, length 0.4000 mm",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 156.0
+                    },
+                    "uuid": "f5511aa5-d08c-4a19-a7ef-1c80a03bdb36"
+                },
+                {
+                    "description": "Pad 1 [L_OPT_BIAS_31] of DL32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 154.4
+                    },
+                    "uuid": "015f5594-ce0f-4403-a491-ba5692ea93cf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [R_OPT_BIAS_31] of DR32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 290.0,
+                        "y": 154.4
+                    },
+                    "uuid": "c4931dc0-0e0c-4ad4-a6c1-961e4fdae45a"
+                },
+                {
+                    "description": "Track [R_OPT_BIAS_31] on EO_Bias_Monitor, length 0.4000 mm",
+                    "pos": {
+                        "x": 290.0,
+                        "y": 156.0
+                    },
+                    "uuid": "021a9632-e592-42fe-89c1-5b3ecbe12cdc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [R_OPT_BIAS_31] on EO_Bias_Monitor, length 12.2500 mm",
+                    "pos": {
+                        "x": 296.0,
+                        "y": 156.0
+                    },
+                    "uuid": "78bae919-da56-4e90-8868-5dab93e8a609"
+                },
+                {
+                    "description": "Pad 1 [R_OPT_BIAS_31] of JR32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 296.0,
+                        "y": 154.8
+                    },
+                    "uuid": "aa634168-cc0a-457e-916f-56ccfdcfa979"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [L_OPT_MONITOR_31] of CL32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 43.0,
+                        "y": 154.4
+                    },
+                    "uuid": "f675a98a-3c40-4b89-8691-30473a23352a"
+                },
+                {
+                    "description": "Track [L_OPT_MONITOR_31] on EO_Bias_Monitor, length 0.4000 mm",
+                    "pos": {
+                        "x": 43.0,
+                        "y": 156.0
+                    },
+                    "uuid": "87e868a2-1500-4f29-bb0a-45b13f3479a1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [R_OPT_MONITOR_31] on EO_Bias_Monitor, length 0.4000 mm",
+                    "pos": {
+                        "x": 267.0,
+                        "y": 156.0
+                    },
+                    "uuid": "6f8e7c92-52f3-4e3b-9162-df8ac751e6a0"
+                },
+                {
+                    "description": "Pad 1 [R_OPT_MONITOR_31] of CR32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 267.0,
+                        "y": 154.4
+                    },
+                    "uuid": "d1dbf460-85f5-4fa4-b7c5-ee65e5944021"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Items shorting two nets (nets  and L_OPT_BIAS_31)",
+            "items": [
+                {
+                    "description": "Pad 2 [<no net>] of DL32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 155.6
+                    },
+                    "uuid": "00e73139-cda5-4cf9-ada9-30a2ecbbe627"
+                },
+                {
+                    "description": "Track [L_OPT_BIAS_31] on EO_Bias_Monitor, length 12.2500 mm",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 156.0
+                    },
+                    "uuid": "7998b89e-40a7-4003-bda4-d44ce59e1c40"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets  and L_OPT_BIAS_31)",
+            "items": [
+                {
+                    "description": "Pad 2 [<no net>] of DL32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 155.6
+                    },
+                    "uuid": "00e73139-cda5-4cf9-ada9-30a2ecbbe627"
+                },
+                {
+                    "description": "Track [L_OPT_BIAS_31] on EO_Bias_Monitor, length 0.4000 mm",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 156.0
+                    },
+                    "uuid": "f5511aa5-d08c-4a19-a7ef-1c80a03bdb36"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets R_OPT_BIAS_31 and )",
+            "items": [
+                {
+                    "description": "Track [R_OPT_BIAS_31] on EO_Bias_Monitor, length 0.4000 mm",
+                    "pos": {
+                        "x": 290.0,
+                        "y": 156.0
+                    },
+                    "uuid": "021a9632-e592-42fe-89c1-5b3ecbe12cdc"
+                },
+                {
+                    "description": "Pad 2 [<no net>] of DR32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 290.0,
+                        "y": 155.6
+                    },
+                    "uuid": "6b51570a-61ec-47eb-bd65-288005fab5e9"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets  and R_OPT_BIAS_31)",
+            "items": [
+                {
+                    "description": "Pad 2 [<no net>] of DR32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 290.0,
+                        "y": 155.6
+                    },
+                    "uuid": "6b51570a-61ec-47eb-bd65-288005fab5e9"
+                },
+                {
+                    "description": "Track [R_OPT_BIAS_31] on EO_Bias_Monitor, length 12.2500 mm",
+                    "pos": {
+                        "x": 296.0,
+                        "y": 156.0
+                    },
+                    "uuid": "78bae919-da56-4e90-8868-5dab93e8a609"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets L_OPT_MONITOR_31 and )",
+            "items": [
+                {
+                    "description": "Track [L_OPT_MONITOR_31] on EO_Bias_Monitor, length 7.9000 mm",
+                    "pos": {
+                        "x": 37.1,
+                        "y": 156.0
+                    },
+                    "uuid": "7452989c-d0df-49d6-ac0c-e4d5f883e5b1"
+                },
+                {
+                    "description": "Pad 2 [<no net>] of CL32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 43.0,
+                        "y": 155.6
+                    },
+                    "uuid": "e251b6e8-2c35-45e9-8c70-6645be6e332d"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets L_OPT_MONITOR_31 and )",
+            "items": [
+                {
+                    "description": "Track [L_OPT_MONITOR_31] on EO_Bias_Monitor, length 0.4000 mm",
+                    "pos": {
+                        "x": 43.0,
+                        "y": 156.0
+                    },
+                    "uuid": "87e868a2-1500-4f29-bb0a-45b13f3479a1"
+                },
+                {
+                    "description": "Pad 2 [<no net>] of CL32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 43.0,
+                        "y": 155.6
+                    },
+                    "uuid": "e251b6e8-2c35-45e9-8c70-6645be6e332d"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets  and R_OPT_MONITOR_31)",
+            "items": [
+                {
+                    "description": "Pad 2 [<no net>] of CR32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 267.0,
+                        "y": 155.6
+                    },
+                    "uuid": "15fcfbab-e5a6-4633-857e-c531bd737fb5"
+                },
+                {
+                    "description": "Track [R_OPT_MONITOR_31] on EO_Bias_Monitor, length 7.9000 mm",
+                    "pos": {
+                        "x": 272.9,
+                        "y": 156.0
+                    },
+                    "uuid": "18a1d9fc-46bd-4596-b74c-d6a13a276112"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets  and R_OPT_MONITOR_31)",
+            "items": [
+                {
+                    "description": "Pad 2 [<no net>] of CR32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 267.0,
+                        "y": 155.6
+                    },
+                    "uuid": "15fcfbab-e5a6-4633-857e-c531bd737fb5"
+                },
+                {
+                    "description": "Track [R_OPT_MONITOR_31] on EO_Bias_Monitor, length 0.4000 mm",
+                    "pos": {
+                        "x": 267.0,
+                        "y": 156.0
+                    },
+                    "uuid": "6f8e7c92-52f3-4e3b-9162-df8ac751e6a0"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 302.0,
+                        "y": 157.0
+                    },
+                    "uuid": "3b334987-48bf-44d5-be70-acdf6d57e911"
+                },
+                {
+                    "description": "Pad B0 [<no net>] of ULREG on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 61.666666,
+                        "y": 157.5
+                    },
+                    "uuid": "435c9eae-6f09-482b-936a-b4d22d01202b"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 302.0,
+                        "y": 157.0
+                    },
+                    "uuid": "3b334987-48bf-44d5-be70-acdf6d57e911"
+                },
+                {
+                    "description": "Pad B1 [<no net>] of ULREG on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 60.833333,
+                        "y": 157.5
+                    },
+                    "uuid": "766b63b9-c05e-45c5-8f1c-d2cb7fdcfe8f"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 302.0,
+                        "y": 157.0
+                    },
+                    "uuid": "3b334987-48bf-44d5-be70-acdf6d57e911"
+                },
+                {
+                    "description": "Pad B2 [<no net>] of ULREG on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 60.0,
+                        "y": 157.5
+                    },
+                    "uuid": "a4c60bcc-8d72-4191-86f9-1d36c2db0661"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 302.0,
+                        "y": 157.0
+                    },
+                    "uuid": "3b334987-48bf-44d5-be70-acdf6d57e911"
+                },
+                {
+                    "description": "Pad B3 [<no net>] of ULREG on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 59.166666,
+                        "y": 157.5
+                    },
+                    "uuid": "22793024-d159-416c-a8e1-e953297183c8"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 302.0,
+                        "y": 157.0
+                    },
+                    "uuid": "3b334987-48bf-44d5-be70-acdf6d57e911"
+                },
+                {
+                    "description": "Pad B4 [<no net>] of ULREG on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 58.333333,
+                        "y": 157.5
+                    },
+                    "uuid": "88cf0c1d-245b-4d1f-9fb3-c35dc424a69c"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.1433 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 302.0,
+                        "y": 157.0
+                    },
+                    "uuid": "3b334987-48bf-44d5-be70-acdf6d57e911"
+                },
+                {
+                    "description": "Pad L0 [<no net>] of ULREG on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 57.5,
+                        "y": 156.666666
+                    },
+                    "uuid": "d804fdd5-6d2b-4e28-b517-723243ff565c"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.1433 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 302.0,
+                        "y": 157.0
+                    },
+                    "uuid": "3b334987-48bf-44d5-be70-acdf6d57e911"
+                },
+                {
+                    "description": "Pad R4 [<no net>] of ULREG on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 62.5,
+                        "y": 156.666666
+                    },
+                    "uuid": "4ec3f568-43e1-4483-9b33-d45cfdc869d6"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 302.0,
+                        "y": 157.0
+                    },
+                    "uuid": "3b334987-48bf-44d5-be70-acdf6d57e911"
+                },
+                {
+                    "description": "Pad B0 [<no net>] of URREG on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 231.666666,
+                        "y": 157.5
+                    },
+                    "uuid": "7794ec02-4042-45e7-a8cf-fc2f23131f97"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 302.0,
+                        "y": 157.0
+                    },
+                    "uuid": "3b334987-48bf-44d5-be70-acdf6d57e911"
+                },
+                {
+                    "description": "Pad B1 [<no net>] of URREG on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 230.833333,
+                        "y": 157.5
+                    },
+                    "uuid": "e15a5b20-b627-43cc-861f-62b8b3147a99"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 302.0,
+                        "y": 157.0
+                    },
+                    "uuid": "3b334987-48bf-44d5-be70-acdf6d57e911"
+                },
+                {
+                    "description": "Pad B2 [<no net>] of URREG on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 230.0,
+                        "y": 157.5
+                    },
+                    "uuid": "936fe28b-fa60-4965-ab68-41456f4ea10f"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 302.0,
+                        "y": 157.0
+                    },
+                    "uuid": "3b334987-48bf-44d5-be70-acdf6d57e911"
+                },
+                {
+                    "description": "Pad B3 [<no net>] of URREG on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 229.166666,
+                        "y": 157.5
+                    },
+                    "uuid": "b4880e7d-a27d-4531-bc79-bf63195a796a"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 302.0,
+                        "y": 157.0
+                    },
+                    "uuid": "3b334987-48bf-44d5-be70-acdf6d57e911"
+                },
+                {
+                    "description": "Pad B4 [<no net>] of URREG on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 228.333333,
+                        "y": 157.5
+                    },
+                    "uuid": "6f1ddad0-dbb7-48e8-901f-727804217791"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.1433 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 302.0,
+                        "y": 157.0
+                    },
+                    "uuid": "3b334987-48bf-44d5-be70-acdf6d57e911"
+                },
+                {
+                    "description": "Pad L0 [<no net>] of URREG on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 227.5,
+                        "y": 156.666666
+                    },
+                    "uuid": "613acb5a-9f33-47ad-9e90-46552070a9be"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.1433 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 302.0,
+                        "y": 157.0
+                    },
+                    "uuid": "3b334987-48bf-44d5-be70-acdf6d57e911"
+                },
+                {
+                    "description": "Pad R4 [<no net>] of URREG on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 232.5,
+                        "y": 156.666666
+                    },
+                    "uuid": "e3202746-bc63-44e3-a765-7782d2b8249a"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [L_OPT_BIAS_31] on EO_Bias_Monitor, length 12.2500 mm",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 156.0
+                    },
+                    "uuid": "7998b89e-40a7-4003-bda4-d44ce59e1c40"
+                },
+                {
+                    "description": "Pad 2 [<no net>] of DL32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 155.6
+                    },
+                    "uuid": "00e73139-cda5-4cf9-ada9-30a2ecbbe627"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [L_OPT_BIAS_31] on EO_Bias_Monitor, length 0.4000 mm",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 156.0
+                    },
+                    "uuid": "f5511aa5-d08c-4a19-a7ef-1c80a03bdb36"
+                },
+                {
+                    "description": "Pad 2 [<no net>] of DL32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 155.6
+                    },
+                    "uuid": "00e73139-cda5-4cf9-ada9-30a2ecbbe627"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [R_OPT_BIAS_31] on EO_Bias_Monitor, length 0.4000 mm",
+                    "pos": {
+                        "x": 290.0,
+                        "y": 156.0
+                    },
+                    "uuid": "021a9632-e592-42fe-89c1-5b3ecbe12cdc"
+                },
+                {
+                    "description": "Pad 2 [<no net>] of DR32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 290.0,
+                        "y": 155.6
+                    },
+                    "uuid": "6b51570a-61ec-47eb-bd65-288005fab5e9"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [R_OPT_BIAS_31] on EO_Bias_Monitor, length 12.2500 mm",
+                    "pos": {
+                        "x": 296.0,
+                        "y": 156.0
+                    },
+                    "uuid": "78bae919-da56-4e90-8868-5dab93e8a609"
+                },
+                {
+                    "description": "Pad 2 [<no net>] of DR32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 290.0,
+                        "y": 155.6
+                    },
+                    "uuid": "6b51570a-61ec-47eb-bd65-288005fab5e9"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [L_OPT_MONITOR_31] on EO_Bias_Monitor, length 0.4000 mm",
+                    "pos": {
+                        "x": 43.0,
+                        "y": 156.0
+                    },
+                    "uuid": "87e868a2-1500-4f29-bb0a-45b13f3479a1"
+                },
+                {
+                    "description": "Pad 2 [<no net>] of CL32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 43.0,
+                        "y": 155.6
+                    },
+                    "uuid": "e251b6e8-2c35-45e9-8c70-6645be6e332d"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [R_OPT_MONITOR_31] on EO_Bias_Monitor, length 0.4000 mm",
+                    "pos": {
+                        "x": 267.0,
+                        "y": 156.0
+                    },
+                    "uuid": "6f8e7c92-52f3-4e3b-9162-df8ac751e6a0"
+                },
+                {
+                    "description": "Pad 2 [<no net>] of CR32 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 267.0,
+                        "y": 155.6
+                    },
+                    "uuid": "15fcfbab-e5a6-4633-857e-c531bd737fb5"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [L_OPT_BIAS_31] on EO_Bias_Monitor, length 12.2500 mm",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 156.0
+                    },
+                    "uuid": "7998b89e-40a7-4003-bda4-d44ce59e1c40"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [L_OPT_BIAS_31] on EO_Bias_Monitor, length 0.4000 mm",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 156.0
+                    },
+                    "uuid": "f5511aa5-d08c-4a19-a7ef-1c80a03bdb36"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [R_OPT_BIAS_31] on EO_Bias_Monitor, length 0.4000 mm",
+                    "pos": {
+                        "x": 290.0,
+                        "y": 156.0
+                    },
+                    "uuid": "021a9632-e592-42fe-89c1-5b3ecbe12cdc"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [R_OPT_BIAS_31] on EO_Bias_Monitor, length 12.2500 mm",
+                    "pos": {
+                        "x": 296.0,
+                        "y": 156.0
+                    },
+                    "uuid": "78bae919-da56-4e90-8868-5dab93e8a609"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [L_OPT_MONITOR_31] on EO_Bias_Monitor, length 0.4000 mm",
+                    "pos": {
+                        "x": 43.0,
+                        "y": 156.0
+                    },
+                    "uuid": "87e868a2-1500-4f29-bb0a-45b13f3479a1"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [R_OPT_MONITOR_31] on EO_Bias_Monitor, length 0.4000 mm",
+                    "pos": {
+                        "x": 267.0,
+                        "y": 156.0
+                    },
+                    "uuid": "6f8e7c92-52f3-4e3b-9162-df8ac751e6a0"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

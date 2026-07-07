@@ -1,0 +1,24 @@
+Please use the attached Tapeout July_04 full template-output package.
+
+It follows both supplied templates:
+
+- VLSI-domain template: front-end, back-end, analog, mixed-signal, verification, physical verification, FPGA note, embedded systems, CAD/EDA, and fabrication-readiness outputs.
+- PCB design-process template: schematic, BOM, footprints, netlist, board outline/mechanical, stackup/constraints, component placement, routing/planes, silkscreen/DRC/fab notes, Gerbers, DFA, and DFM outputs.
+
+The schematic is included in `04_front_end_schematic`. The dual NCE and TFLN view is in:
+`04_front_end_schematic/pdf_svg/TFLN_AI_NODE_X2_CLEAR_DUAL_NCE_TFLN_SCHEMATIC_OVERVIEW.pdf`
+
+That overview identifies:
+- U1 = NCE-A die
+- U4 = NCE-B die
+- U3 = TFLN_PIC_4xMZM photonic IC
+- U50-U53 = RF driver chain
+- U30-U35 and U40-U45 = HBM groups for the two NCE dies
+
+Current closure state:
+- KiCad DRC: 32 open violations
+- Unconnected items: 0
+- Schematic parity: 564 open items
+- Final procurement BOM: release pending until ECO/parity closure and component signoff
+
+Please use `00_read_me/ALL_TEMPLATE_OUTPUTS_INDEX.pdf` as the top-level map and `17_release_gate/RELEASE_GATE_CHECKLIST.pdf` as the release gate.
