@@ -1,0 +1,80 @@
+(footprint "QFN-48-1EP_7x7mm_P0.5mm"
+  (layer "F.Cu")
+  (property "Datasheet" ""
+  	(at 0 0 0)
+  	(layer "F.Fab")
+  	(hide yes)
+  	(uuid "500e20b1-d7a1-4cb3-a277-6a1f0774e8ea")
+  	(effects
+  		(font
+  			(size 1.27 1.27)
+  			(thickness 0.15)
+  		)
+  	)
+  )
+  (property "Description" "Renesas 24-Phase Digital VRM Controller, 0.8V output"
+  	(at 0 0 0)
+  	(layer "F.Fab")
+  	(hide yes)
+  	(uuid "c0ca1e8a-eb73-45a6-be3a-622b7e914e88")
+  	(effects
+  		(font
+  			(size 1.27 1.27)
+  			(thickness 0.15)
+  		)
+  	)
+  )
+  		(property "MPN" "ISL69260IRAZ"
+  	(at 0 0 0)
+  	(layer "F.Fab")
+  	(hide yes)
+  	(uuid "a1a4d018-a098-442d-ba35-b121c98e9300")
+  	(effects
+  		(font
+  			(size 1.27 1.27)
+  			(thickness 0.15)
+  		)
+  	)
+  )
+(fp_line
+  	(start -3.5 -3.5)
+  	(end 3.5 -3.5)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "88fa017b-dcfe-4d80-b1f2-7a73d7784c96")
+  )
+  (fp_line
+  	(start -3.5 3.5)
+  	(end -3.5 -3.5)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "a11dd058-5d6f-47d9-a062-736992f2b800")
+  )
+  (fp_line
+  	(start 3.5 -3.5)
+  	(end 3.5 3.5)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "e211205e-d766-4c34-9c9d-34f225f61032")
+  )
+  (fp_line
+  	(start 3.5 3.5)
+  	(end -3.5 3.5)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "d11497ea-91c8-4294-b265-b7546d8dcc6b")
+  )
+  (embedded_fonts no)
+  )

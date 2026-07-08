@@ -1,0 +1,80 @@
+(footprint "SOT-23-5"
+  (layer "F.Cu")
+  (property "Datasheet" ""
+  	(at 0 0 0)
+  	(layer "F.Fab")
+  	(hide yes)
+  	(uuid "ccc2b13b-7a26-4e21-af64-36b6df4e976c")
+  	(effects
+  		(font
+  			(size 1.27 1.27)
+  			(thickness 0.15)
+  		)
+  	)
+  )
+  (property "Description" "ADI Ultra-Low-Noise LDO, 0.9V output for TFLN RF"
+  	(at 0 0 0)
+  	(layer "F.Fab")
+  	(hide yes)
+  	(uuid "1c41d590-1c94-4ff9-bf9f-f19a4656f858")
+  	(effects
+  		(font
+  			(size 1.27 1.27)
+  			(thickness 0.15)
+  		)
+  	)
+  )
+  		(property "MPN" "ADP7118AUJZ-0.9-R7"
+  	(at 0 0 0)
+  	(layer "F.Fab")
+  	(hide yes)
+  	(uuid "23a84f77-cfc2-42d8-baa5-38ae6667dd49")
+  	(effects
+  		(font
+  			(size 1.27 1.27)
+  			(thickness 0.15)
+  		)
+  	)
+  )
+(fp_line
+  	(start -1.5 -1)
+  	(end 1.5 -1)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "00035966-4696-46bf-af85-2f9a5c82b1f5")
+  )
+  (fp_line
+  	(start -1.5 1)
+  	(end -1.5 -1)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "27284845-f1df-47fd-b0f2-a82d57e4466e")
+  )
+  (fp_line
+  	(start 1.5 -1)
+  	(end 1.5 1)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "1345549f-4d99-402f-bc7e-dfb251fe1996")
+  )
+  (fp_line
+  	(start 1.5 1)
+  	(end -1.5 1)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "34d9e746-6929-483b-837a-b7b69b5efd9b")
+  )
+  (embedded_fonts no)
+  )

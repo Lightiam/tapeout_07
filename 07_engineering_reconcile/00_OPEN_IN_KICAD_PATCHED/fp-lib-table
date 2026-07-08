@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name "Capacitor_SMD")(type "KiCad")(uri "${KIPRJMOD}/Capacitor_SMD.pretty")(options "")(descr "Project-local library for reconciled PCB package"))
+  (lib (name "Fiducial")(type "KiCad")(uri "${KIPRJMOD}/Fiducial.pretty")(options "")(descr "Project-local library for reconciled PCB package"))
+  (lib (name "LightRail")(type "KiCad")(uri "${KIPRJMOD}/LightRail.pretty")(options "")(descr "Project-local library for reconciled PCB package"))
+  (lib (name "Package_DFN_QFN")(type "KiCad")(uri "${KIPRJMOD}/Package_DFN_QFN.pretty")(options "")(descr "Project-local library for reconciled PCB package"))
+  (lib (name "Package_TO_SOT_SMD")(type "KiCad")(uri "${KIPRJMOD}/Package_TO_SOT_SMD.pretty")(options "")(descr "Project-local library for reconciled PCB package"))
+)
