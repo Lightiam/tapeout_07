@@ -31,3 +31,26 @@ the release gate:
 - Routing reported complete (0 unrouted nets) for the modelled nets.
 
 Both findings are reflected in `../RELEASE_GATE_CHECKLIST.md`.
+
+## Independent KiCad 9 verification
+
+KiCad 9.0.9 (`kicad-cli`, matching the board's own generator) was installed and
+run directly against the same board, independently of the handed-down
+reconciliation JSON:
+
+```
+kicad-cli pcb drc --format json --severity-all "$PCB"
+```
+
+- `drc_kicad9_verify.json` — **0 errors, 0 unconnected, 84 warnings**
+  (82 `lib_footprint_issues` + 2 `silk_over_copper`). This independently confirms
+  the reconciliation's "0 DRC errors / 0 unconnected" claim with the actual EDA
+  tool.
+- `centroid_kicad9_netlisted.csv` — assembly centroid for the 82 netlisted parts,
+  exported by `kicad-cli pcb export pos` (KiCad plot-origin coordinate system,
+  Y-down) and filtered to the netlisted references. Confirms exactly 82 real
+  placements out of 9,000 total footprints.
+
+KiCad 9 is installed per-session by the SessionStart hook
+`.claude/hooks/setup-kicad.sh` (see `.claude/settings.json`), so this
+verification is reproducible in any future session on this repo.

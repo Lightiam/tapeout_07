@@ -8,8 +8,8 @@ Status legend: ✅ met · ⚠️ conditional / documented · ⛔ blocking.
 | # | Gate item | Status | Note |
 | --- | --- | :---: | --- |
 | 1 | All components placed on PCB | ✅ | 82/82 netlisted parts placed (audit) |
-| 2 | DRC errors = 0 | ✅ | reconciled KiCad source |
-| 3 | Unconnected items = 0 | ✅ | reconciled KiCad source |
+| 2 | DRC errors = 0 | ✅ | independently re-verified with KiCad 9.0.9 `kicad-cli` (0 errors, 84 warnings) — see `analysis/drc_kicad9_verify.json` |
+| 3 | Unconnected items = 0 | ✅ | re-verified with KiCad 9.0.9 `kicad-cli` |
 | 4 | Schematic parity = 0 | ⛔ | 214 warnings (148 net_conflict + 66 extra_footprint) |
 | 5 | DRC warnings cleared | ⚠️ | 88 warnings (82 library + 6 silk_over_copper), non-fatal |
 | 6 | Reference-reconstruction status cleared | ⛔ | board still marked REFERENCE RECONSTRUCTION / PLACEHOLDER |
