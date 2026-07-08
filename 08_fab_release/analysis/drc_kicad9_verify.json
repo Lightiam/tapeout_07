@@ -1,0 +1,1276 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-07-08T02:20:12+0000",
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "9.0.9",
+    "schematic_parity": [],
+    "source": "TFLN_AI_NODE_X2_SERVER_CHASSIS_IO.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of UPWR_R on F.Silkscreen",
+                    "pos": {
+                        "x": 225.0,
+                        "y": 148.0
+                    },
+                    "uuid": "4f424786-df7e-4c8a-8946-0a5273cf0954"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment of UPWR_L on F.Silkscreen",
+                    "pos": {
+                        "x": 55.0,
+                        "y": 148.0
+                    },
+                    "uuid": "01b8d434-7d38-41a7-8c89-a7f9ef1c6120"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'LightRail'.",
+            "items": [
+                {
+                    "description": "Footprint U35",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 103.0
+                    },
+                    "uuid": "80027428-4db5-4169-8a15-23c0c5533bae"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U221",
+                    "pos": {
+                        "x": 252.8,
+                        "y": 156.0
+                    },
+                    "uuid": "e7b0efb7-1ca3-4adb-86b8-ff71b3a4b072"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U232",
+                    "pos": {
+                        "x": 235.0,
+                        "y": 165.0
+                    },
+                    "uuid": "0843c32d-044a-4bdd-9981-35afc5b0bc4b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint C14",
+                    "pos": {
+                        "x": 205.5,
+                        "y": 116.0
+                    },
+                    "uuid": "510d5449-c5c4-425b-b8c3-e921a6b24b15"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U200",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 162.0
+                    },
+                    "uuid": "64f086b9-9296-47a7-981e-16cd47c4c465"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 104.6,
+                        "y": 116.0
+                    },
+                    "uuid": "f26f0e88-bbff-46c4-969f-4719ce6837a6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'LightRail'.",
+            "items": [
+                {
+                    "description": "Footprint J21",
+                    "pos": {
+                        "x": 110.0,
+                        "y": 13.0
+                    },
+                    "uuid": "292c9fb8-ae58-4222-9893-40540e084f8f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U226",
+                    "pos": {
+                        "x": 128.199999,
+                        "y": 165.0
+                    },
+                    "uuid": "5369b535-9e18-4b0e-a0c9-31639f7ee5e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U224",
+                    "pos": {
+                        "x": 92.6,
+                        "y": 165.0
+                    },
+                    "uuid": "37cb69e9-99a9-4406-a852-86019630538f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U215",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 156.0
+                    },
+                    "uuid": "f980ea90-ef30-41f2-a077-f35aa62ef2fb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint C10",
+                    "pos": {
+                        "x": 188.3,
+                        "y": 116.0
+                    },
+                    "uuid": "39ffeb98-ac8d-41a8-a337-7352618ba085"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U263",
+                    "pos": {
+                        "x": 102.0,
+                        "y": 38.0
+                    },
+                    "uuid": "d06376c1-2fd2-46c5-9098-1510d8b6b1af"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U273",
+                    "pos": {
+                        "x": 238.0,
+                        "y": 38.0
+                    },
+                    "uuid": "9bb5b2e5-b808-4e2d-a5a5-4675877cac62"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U53",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 53.0
+                    },
+                    "uuid": "14459985-6362-4336-93bc-1460cdd12d20"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U271",
+                    "pos": {
+                        "x": 218.0,
+                        "y": 38.0
+                    },
+                    "uuid": "c840ae8e-143f-4b5a-9844-41cec48408c5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U202",
+                    "pos": {
+                        "x": 40.0,
+                        "y": 162.0
+                    },
+                    "uuid": "82dc864c-ed7b-4a4b-9654-fa10651b7422"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint C11",
+                    "pos": {
+                        "x": 192.6,
+                        "y": 116.0
+                    },
+                    "uuid": "4c9f9f5b-96b4-49a1-9ff8-4b2c7b6ccb24"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U222",
+                    "pos": {
+                        "x": 57.0,
+                        "y": 165.0
+                    },
+                    "uuid": "65d4f318-28d6-4315-94be-f8763d9c001f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U261",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 38.0
+                    },
+                    "uuid": "ed0753eb-4b2b-4eaf-a1ce-efaa2d57d1bd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint C9",
+                    "pos": {
+                        "x": 184.0,
+                        "y": 116.0
+                    },
+                    "uuid": "5d2b320c-6031-40d1-9a4f-987d40db9c07"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U219",
+                    "pos": {
+                        "x": 217.2,
+                        "y": 156.0
+                    },
+                    "uuid": "285fc225-24ee-4a73-aa57-22deb0e94ebc"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'LightRail'.",
+            "items": [
+                {
+                    "description": "Footprint U31",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 75.0
+                    },
+                    "uuid": "f41dca4a-18c6-4321-8a9a-ded74eb606ef"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U211",
+                    "pos": {
+                        "x": 74.8,
+                        "y": 156.0
+                    },
+                    "uuid": "4a966914-e7aa-4f1a-b71a-5843d5ed14ce"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'LightRail'.",
+            "items": [
+                {
+                    "description": "Footprint J20",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 13.0
+                    },
+                    "uuid": "299cc2b0-0114-427c-b23f-1875868b42ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint C16",
+                    "pos": {
+                        "x": 214.1,
+                        "y": 116.0
+                    },
+                    "uuid": "9c83fec0-d5b6-4334-888b-2290749889fa"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'LightRail'.",
+            "items": [
+                {
+                    "description": "Footprint U44",
+                    "pos": {
+                        "x": 204.0,
+                        "y": 103.0
+                    },
+                    "uuid": "507178bd-af09-4f12-8e96-92047a277669"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint C7",
+                    "pos": {
+                        "x": 121.8,
+                        "y": 116.0
+                    },
+                    "uuid": "fc7bbe8d-1b1f-4fc8-8f81-892bcb1af7f2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U260",
+                    "pos": {
+                        "x": 72.0,
+                        "y": 38.0
+                    },
+                    "uuid": "2075ce75-6143-42ec-8882-c29fc81cc4d4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U203",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 162.0
+                    },
+                    "uuid": "039c63ec-6ba2-446f-96a8-931c88ff0559"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'LightRail'.",
+            "items": [
+                {
+                    "description": "Footprint U30",
+                    "pos": {
+                        "x": 96.0,
+                        "y": 75.0
+                    },
+                    "uuid": "cc7cfafe-f08c-4146-9659-6f0d42352d0e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U227",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 165.0
+                    },
+                    "uuid": "e3dc63ea-c014-4e22-9dd1-7a99a32427d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_TO_SOT_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint U241",
+                    "pos": {
+                        "x": 140.0,
+                        "y": 162.0
+                    },
+                    "uuid": "f45174a0-7855-403a-b77b-c9991c575824"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'LightRail'.",
+            "items": [
+                {
+                    "description": "Footprint U32",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 75.0
+                    },
+                    "uuid": "1a40a63f-a6e2-4ff1-847a-e664ab610db7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U231",
+                    "pos": {
+                        "x": 217.2,
+                        "y": 165.0
+                    },
+                    "uuid": "3c11dbf9-29bc-4b81-b138-66448a16b9ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'LightRail'.",
+            "items": [
+                {
+                    "description": "Footprint U41",
+                    "pos": {
+                        "x": 214.0,
+                        "y": 75.0
+                    },
+                    "uuid": "b55d92b7-2997-4552-b246-9685742e321e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U217",
+                    "pos": {
+                        "x": 181.6,
+                        "y": 156.0
+                    },
+                    "uuid": "f6e0100b-1591-4573-9836-aea0b58f8674"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint C5",
+                    "pos": {
+                        "x": 113.2,
+                        "y": 116.0
+                    },
+                    "uuid": "4e3e82cc-3b17-4b43-8f1d-0697fd245e72"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U233",
+                    "pos": {
+                        "x": 252.8,
+                        "y": 165.0
+                    },
+                    "uuid": "ea5b7ee9-8cdd-496c-8865-4ad8c1739967"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'LightRail'.",
+            "items": [
+                {
+                    "description": "Footprint U42",
+                    "pos": {
+                        "x": 184.0,
+                        "y": 103.0
+                    },
+                    "uuid": "8ed45edc-58f7-4711-be05-709b33a35212"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U52",
+                    "pos": {
+                        "x": 157.7,
+                        "y": 53.0
+                    },
+                    "uuid": "52210734-0a81-4fea-afe2-c96d6b44948f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint C13",
+                    "pos": {
+                        "x": 201.2,
+                        "y": 116.0
+                    },
+                    "uuid": "1d1b08b1-6575-46e7-8514-d6cc1397d1f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 100.3,
+                        "y": 116.0
+                    },
+                    "uuid": "f64e62f0-2628-40b1-890c-9eb71da5f3ea"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'LightRail'.",
+            "items": [
+                {
+                    "description": "Footprint J22",
+                    "pos": {
+                        "x": 190.0,
+                        "y": 13.0
+                    },
+                    "uuid": "b16ab7e6-dfb8-4f54-aa6a-8d512b8554de"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint C12",
+                    "pos": {
+                        "x": 196.9,
+                        "y": 116.0
+                    },
+                    "uuid": "bde1b3c6-1449-4d5a-acb8-20e719a34471"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_TO_SOT_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint U242",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 162.0
+                    },
+                    "uuid": "900c226f-7949-49a4-a61a-677c073f8a90"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U251",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 28.0
+                    },
+                    "uuid": "1285bde1-cef1-4707-99cb-5b1b4ee2e6d6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U262",
+                    "pos": {
+                        "x": 92.0,
+                        "y": 38.0
+                    },
+                    "uuid": "07a240b3-f2ad-4074-99ee-6d146fb05889"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U228",
+                    "pos": {
+                        "x": 163.8,
+                        "y": 165.0
+                    },
+                    "uuid": "f820efcb-4015-4e92-8c55-a360147da0a9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint C15",
+                    "pos": {
+                        "x": 209.8,
+                        "y": 116.0
+                    },
+                    "uuid": "353d5d03-fa0e-4354-b81b-3d0fccd92744"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'LightRail'.",
+            "items": [
+                {
+                    "description": "Footprint U33",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 75.0
+                    },
+                    "uuid": "019ea79d-338f-47c5-b520-60bdda4782fa"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint C4",
+                    "pos": {
+                        "x": 108.9,
+                        "y": 116.0
+                    },
+                    "uuid": "27f2ab66-3bd9-4f31-9736-3bd6d856c1d7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U201",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 162.0
+                    },
+                    "uuid": "a0bbafaa-d1cd-4eee-85f1-b909f94c4086"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U50",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 53.0
+                    },
+                    "uuid": "c3e6a3c9-0825-4844-8cbf-07a851e83723"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U218",
+                    "pos": {
+                        "x": 199.4,
+                        "y": 156.0
+                    },
+                    "uuid": "2693bf4f-607d-4340-8447-d1f83a0d9288"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint C6",
+                    "pos": {
+                        "x": 117.5,
+                        "y": 116.0
+                    },
+                    "uuid": "967db1ab-21f2-43de-941b-2fe9f7809e74"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'LightRail'.",
+            "items": [
+                {
+                    "description": "Footprint U40",
+                    "pos": {
+                        "x": 204.0,
+                        "y": 75.0
+                    },
+                    "uuid": "30e4167f-8372-4f47-b95e-1a98e84d84cd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint C8",
+                    "pos": {
+                        "x": 126.1,
+                        "y": 116.0
+                    },
+                    "uuid": "d4928db7-76ea-4022-93dc-7190469124f6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'LightRail'.",
+            "items": [
+                {
+                    "description": "Footprint U45",
+                    "pos": {
+                        "x": 214.0,
+                        "y": 103.0
+                    },
+                    "uuid": "a07fb3c3-f8b9-4fa9-aa3e-e450ab480a98"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Capacitor_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 96.0,
+                        "y": 116.0
+                    },
+                    "uuid": "1ccbbfec-f44c-40e2-abd5-32c7921a88de"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'LightRail'.",
+            "items": [
+                {
+                    "description": "Footprint J23",
+                    "pos": {
+                        "x": 270.0,
+                        "y": 13.0
+                    },
+                    "uuid": "96d6f540-852f-49f3-9b95-bd6344c967d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'LightRail'.",
+            "items": [
+                {
+                    "description": "Footprint U43",
+                    "pos": {
+                        "x": 194.0,
+                        "y": 103.0
+                    },
+                    "uuid": "debeb1e1-71a9-4571-a1d7-7625a5c9a24c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U380",
+                    "pos": {
+                        "x": 155.0,
+                        "y": 145.0
+                    },
+                    "uuid": "7b5e47bf-8766-4c29-8c47-2d48cf324c17"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U230",
+                    "pos": {
+                        "x": 199.4,
+                        "y": 165.0
+                    },
+                    "uuid": "8d920828-50ff-486c-8971-6c96d0196df8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U229",
+                    "pos": {
+                        "x": 181.6,
+                        "y": 165.0
+                    },
+                    "uuid": "cf6acf1a-90cc-430b-8355-883517bbd25d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'LightRail'.",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 111.0,
+                        "y": 89.0
+                    },
+                    "uuid": "aa2501e8-d03d-4488-8bc2-aa4ff4124618"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_TO_SOT_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint U243",
+                    "pos": {
+                        "x": 154.0,
+                        "y": 162.0
+                    },
+                    "uuid": "7d9596ce-9e12-4c9e-ba18-22a3ad02be67"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U220",
+                    "pos": {
+                        "x": 235.0,
+                        "y": 156.0
+                    },
+                    "uuid": "31b52e91-d291-4d21-aee4-28ea03fcc4b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U216",
+                    "pos": {
+                        "x": 163.8,
+                        "y": 156.0
+                    },
+                    "uuid": "dcaee8ee-f06f-4e35-86f9-3c0befb52960"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U213",
+                    "pos": {
+                        "x": 110.4,
+                        "y": 156.0
+                    },
+                    "uuid": "c778322a-863e-44bd-a7eb-4975f2a55679"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U210",
+                    "pos": {
+                        "x": 57.0,
+                        "y": 156.0
+                    },
+                    "uuid": "03a9c3a6-4dcf-4e3f-88b8-ea9b062a1084"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U270",
+                    "pos": {
+                        "x": 208.0,
+                        "y": 38.0
+                    },
+                    "uuid": "76bf252e-765c-4238-b9e0-2f7492439b0b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'LightRail'.",
+            "items": [
+                {
+                    "description": "Footprint U34",
+                    "pos": {
+                        "x": 96.0,
+                        "y": 103.0
+                    },
+                    "uuid": "b2b63572-a55c-4e90-8179-87099be43cdf"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U51",
+                    "pos": {
+                        "x": 152.3,
+                        "y": 53.0
+                    },
+                    "uuid": "91a987ce-663d-46cb-b124-27c30c78b514"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U225",
+                    "pos": {
+                        "x": 110.4,
+                        "y": 165.0
+                    },
+                    "uuid": "36bc4ec7-f334-463e-b8ab-2d67279ffd07"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_TO_SOT_SMD'.",
+            "items": [
+                {
+                    "description": "Footprint U240",
+                    "pos": {
+                        "x": 133.0,
+                        "y": 162.0
+                    },
+                    "uuid": "d655da2f-4d86-4d6c-ab1f-505cdd079271"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U272",
+                    "pos": {
+                        "x": 228.0,
+                        "y": 38.0
+                    },
+                    "uuid": "3afcee05-87da-4c10-8c2a-6a2697125eda"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U214",
+                    "pos": {
+                        "x": 128.199999,
+                        "y": 156.0
+                    },
+                    "uuid": "17c9eb7d-01c9-4391-bb32-b5b02ce34c67"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'LightRail'.",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 155.0,
+                        "y": 89.0
+                    },
+                    "uuid": "10820396-3395-4940-936f-726afa17e191"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U212",
+                    "pos": {
+                        "x": 92.6,
+                        "y": 156.0
+                    },
+                    "uuid": "cac700be-7b1e-4e67-acfb-9b53b0c8377e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U250",
+                    "pos": {
+                        "x": 149.0,
+                        "y": 28.0
+                    },
+                    "uuid": "a06d2511-d76a-4585-9cee-a86ee176ccad"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'LightRail'.",
+            "items": [
+                {
+                    "description": "Footprint U4",
+                    "pos": {
+                        "x": 199.0,
+                        "y": 89.0
+                    },
+                    "uuid": "699b6fc4-8713-4cf7-bad8-525f6b6a856b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'Package_DFN_QFN'.",
+            "items": [
+                {
+                    "description": "Footprint U223",
+                    "pos": {
+                        "x": 74.8,
+                        "y": 165.0
+                    },
+                    "uuid": "d210342b-921e-40e9-a7a4-4d30bd22581a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        }
+    ]
+}
