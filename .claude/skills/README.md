@@ -1,4 +1,18 @@
-# Vendored Claude Code skills — kicad-happy
+# Vendored Claude Code skills
+
+Two skill sets are vendored here so every Claude Code / Claude-on-web session on
+this repo has them automatically (the container is cloned fresh per session):
+
+- **kicad-happy** (`kicad`, `bom`, `spice`, `emc`, …) — KiCad design/review/fab
+  skills. Details below.
+- **graphify** (`graphify/`) — turns the repo (code, docs) into a queryable
+  knowledge graph. Upstream https://github.com/Graphify-Labs/graphify (pip
+  `graphifyy`, MIT). Also installed per-session by `../hooks/setup-graphify.sh`;
+  invoke with `/graphify .`.
+
+---
+
+# kicad-happy
 
 This directory vendors the **kicad-happy** skill collection so that every Claude
 Code / Claude-on-web session working on this repository has the KiCad design,

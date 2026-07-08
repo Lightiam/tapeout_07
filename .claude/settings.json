@@ -6,6 +6,10 @@
           {
             "type": "command",
             "command": "bash .claude/hooks/setup-kicad.sh"
+          },
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/setup-graphify.sh"
           }
         ]
       }
