@@ -1,0 +1,7 @@
+Tool,Diameter_mm,Qty,Plating,Notes
+T1,0.350,180,PTH,Via / small PTH
+T2,0.450,44,PTH,Via / small PTH
+T3,0.500,16,PTH,Via / small PTH
+T4,0.900,8,PTH,PTH
+T5,3.200,12,NPTH,Mounting hole (M3)
+TOTAL,,260,,
