@@ -1,0 +1,80 @@
+(footprint "PCIE_x16_SLOT"
+  (layer "F.Cu")
+  (property "Datasheet" ""
+  	(at 0 0 0)
+  	(layer "F.Fab")
+  	(hide yes)
+  	(uuid "b78b2602-07f7-4688-899c-6d670a96081e")
+  	(effects
+  		(font
+  			(size 1.27 1.27)
+  			(thickness 0.15)
+  		)
+  	)
+  )
+  (property "Description" "TE Connectivity PCIe Gen5/6 x16 Slot, 164-pin"
+  	(at 0 0 0)
+  	(layer "F.Fab")
+  	(hide yes)
+  	(uuid "dafe774e-7337-4147-b867-da9ff42f1a18")
+  	(effects
+  		(font
+  			(size 1.27 1.27)
+  			(thickness 0.15)
+  		)
+  	)
+  )
+  		(property "MPN" "2-2337939-3"
+  	(at 0 0 0)
+  	(layer "F.Fab")
+  	(hide yes)
+  	(uuid "085ae6ab-3758-443e-890f-fa696a520bec")
+  	(effects
+  		(font
+  			(size 1.27 1.27)
+  			(thickness 0.15)
+  		)
+  	)
+  )
+(fp_line
+  	(start -6 -2)
+  	(end 6 -2)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "845f5fac-8391-4db5-b7cf-15babd43c1e0")
+  )
+  (fp_line
+  	(start -6 2)
+  	(end -6 -2)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "3f7f80b3-234d-4a39-82ad-f6898894aeab")
+  )
+  (fp_line
+  	(start 6 -2)
+  	(end 6 2)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "23393cca-adf1-4a74-8dbb-5268a1f70119")
+  )
+  (fp_line
+  	(start 6 2)
+  	(end -6 2)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "9db55e4f-f047-473a-b4e4-78a0117b8342")
+  )
+  (embedded_fonts no)
+  )

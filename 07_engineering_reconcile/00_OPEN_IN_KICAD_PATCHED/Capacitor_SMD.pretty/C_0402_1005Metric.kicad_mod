@@ -1,0 +1,80 @@
+(footprint "C_0402_1005Metric"
+  (layer "F.Cu")
+  (property "Datasheet" ""
+  	(at 0 0 0)
+  	(layer "F.Fab")
+  	(hide yes)
+  	(uuid "1b60436d-c36c-47cb-adfd-ef30e42cad5a")
+  	(effects
+  		(font
+  			(size 1.27 1.27)
+  			(thickness 0.15)
+  		)
+  	)
+  )
+  (property "Description" ""
+  	(at 0 0 0)
+  	(layer "F.Fab")
+  	(hide yes)
+  	(uuid "5e113b8c-22d3-4d27-98fe-d708b14fe2f0")
+  	(effects
+  		(font
+  			(size 1.27 1.27)
+  			(thickness 0.15)
+  		)
+  	)
+  )
+  		(property "MPN" "GRM155R71C104KA88"
+  	(at 0 0 0)
+  	(layer "F.Fab")
+  	(hide yes)
+  	(uuid "3ee35086-170b-4a95-a0b0-770591cc9705")
+  	(effects
+  		(font
+  			(size 1.27 1.27)
+  			(thickness 0.15)
+  		)
+  	)
+  )
+(fp_line
+  	(start -0.5 -0.25)
+  	(end 0.5 -0.25)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "05ccde66-fded-412f-bde8-652a77b5d0cc")
+  )
+  (fp_line
+  	(start -0.5 0.25)
+  	(end -0.5 -0.25)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "e2a11c62-f1f7-4621-bf29-6bd84f2d3960")
+  )
+  (fp_line
+  	(start 0.5 -0.25)
+  	(end 0.5 0.25)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "79d4c529-47c5-416b-8608-376f58b4da66")
+  )
+  (fp_line
+  	(start 0.5 0.25)
+  	(end -0.5 0.25)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "b73621f7-208a-49ba-86de-483f7d503950")
+  )
+  (embedded_fonts no)
+  )

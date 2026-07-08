@@ -4,12 +4,12 @@
   (title_block
     (title "TFLN_AI_NODE_X2 TFLN Optical Data Plane + Electrical Service")
     (date "2026-06-24")
-    (rev "4.0")
+    (rev "July_04-ENG-RECONCILE-01")
     (company "LightRail AI")
     (comment 1 "TFLN/LNOI Optical Data Substrate | Dual NCE Gen3")
     (comment 2 "Light carries data; metal is local power/bias/heater/monitor/control only")
-    (comment 3 "User-supplied MPNs and placeholder pins require authoritative validation")
-    (comment 4 "See BOM_USER_SUPPLIED.csv and COMPONENT_VALIDATION.md")
+    (comment 3 "Connectivity source/netlist required to close schematic parity")
+    (comment 4 "4-layer High-Tg FR4 review stackup | ENIG finish")
   )
   (lib_symbols
     (symbol "NCE_Gen3" (in_bom yes) (on_board yes)

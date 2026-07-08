@@ -1,47 +1,43 @@
 # Release Gate Checklist
 
-Single-page go/no-go for `TFLN_AI_NODE_X2_SERVER_CHASSIS_IO`.
-Status legend: ✅ met · ⚠️ conditional / documented · ⛔ blocking.
+Single-page engineering gate for `TFLN_AI_NODE_X2_SERVER_CHASSIS_IO`.
+Status legend: met / review / open.
 
-## Design / electrical
-
-| # | Gate item | Status | Note |
-| --- | --- | :---: | --- |
-| 1 | All components placed on PCB | ✅ | 82/82 netlisted parts placed (audit) |
-| 2 | DRC errors = 0 | ✅ | independently re-verified with KiCad 9.0.9 `kicad-cli` (0 errors, 84 warnings) — see `analysis/drc_kicad9_verify.json` |
-| 3 | Unconnected items = 0 | ✅ | re-verified with KiCad 9.0.9 `kicad-cli` |
-| 4 | Schematic parity = 0 | ⛔ | 214 warnings (148 net_conflict + 66 extra_footprint) |
-| 5 | DRC warnings cleared | ⚠️ | 88 warnings (82 library + 6 silk_over_copper), non-fatal |
-| 6 | Reference-reconstruction status cleared | ⛔ | board still marked REFERENCE RECONSTRUCTION / PLACEHOLDER |
-
-## Fabrication data
+## Design / Electrical
 
 | # | Gate item | Status | Note |
 | --- | --- | :---: | --- |
-| 7 | Complete Gerber layer set | ✅ | 4 cu + masks + pastes + silks + edge + drill + job |
-| 8 | NC drill valid | ✅ | 5 tools / 260 holes / plating attributed |
-| 9 | Board revision set | ⚠️ | was `rev?`; corrected job = `X2-ENG-A` (bump for production) |
-| 10 | Surface finish specified | ⚠️ | was `None`; corrected job = ENIG (needs sign-off) |
-| 11 | Controlled-impedance stackup defined | ⛔ | not specified; required for RF/PCIe/retimer nets |
-| 12 | Fab drawing / drill map PDF | ⛔ | not in drop; regenerate from KiCad |
-| 13 | Bare-board test netlist (IPC-D-356) | ⛔ | not in drop; regenerate from KiCad |
+| 1 | All components placed on PCB | met | 82/82 netlisted parts placed in the current audit. |
+| 2 | DRC errors = 0 | met | KiCad validation reports 0 DRC errors. |
+| 3 | Unconnected items = 0 | met | KiCad validation reports 0 unconnected items. |
+| 4 | Schematic parity = 0 | open | 214 warnings remain: 148 net_conflict and 66 extra_footprint. |
+| 5 | DRC warnings reviewed | review | 82 warnings remain, all library/footprint mismatch. |
+| 6 | Reference-reconstruction status resolved | open | Complete schematic/netlist source is required for electrical closure. |
+
+## Fabrication Data
+
+| # | Gate item | Status | Note |
+| --- | --- | :---: | --- |
+| 7 | Complete Gerber layer set | met | 4 copper layers, masks, pastes, silks, edge, drill, and job file are present in the post-cleanup package. |
+| 8 | NC drill valid | met | Drill file and drill report are included. |
+| 9 | Board revision set | review | `July_04-ENG-RECONCILE-01` is set in the patched KiCad source. |
+| 10 | Surface finish specified | review | ENIG metadata is set; manufacturer and engineering signoff still required. |
+| 11 | Controlled-impedance stackup defined | review | 4-layer High-Tg FR4 review stackup is present; impedance targets need engineering/manufacturer confirmation. |
+| 12 | Fab drawing / drill map PDF | met | Drill map PDF is included in the post-cleanup Gerber/drill export. |
+| 13 | Bare-board test netlist | open | Regenerate after authoritative schematic/netlist import and parity closure. |
 
 ## Assembly
 
 | # | Gate item | Status | Note |
 | --- | --- | :---: | --- |
-| 14 | Centroid / pick-and-place file | ✅ | `data/centroid_pick_and_place.csv` (82 parts) |
-| 15 | BOM MPN coverage | ✅ | 0 missing MPNs |
-| 16 | BOM status sheets current | ⛔ | workbook still shows pre-reconciliation numbers (Q-F) |
-| 17 | Placeholder populate/DNP resolved | ⛔ | pending Q-A sign-off |
-| 18 | Mounting-hole clearance (MH5) confirmed | ⛔ | pending Q-C mechanical sign-off |
-| 19 | Fiducials for pick-and-place | ⛔ | FD-001: none on F.Cu; fine-pitch BGA/QFN present (kicad-happy pre-fab) |
-| 20 | Test-point coverage | ⚠️ | TE-001: 0/380 nets; add for ICT / flying-probe bring-up |
+| 14 | Centroid / pick-and-place file | met | `data/centroid_pick_and_place.csv` is present in `08_fab_release`. |
+| 15 | BOM MPN coverage | met | Current Step 01 BOM workbook reports 0 missing MPNs. |
+| 16 | BOM status sheets current | met | Step 01 BOM workbook was updated with current DRC/parity counts and review/signoff wording. |
+| 17 | Placeholder populate/DNP resolved | open | Requires named engineering signoff. |
+| 18 | Mounting-hole and chassis constraints confirmed | open | Requires mechanical/chassis signoff. |
+| 19 | Fiducials for pick-and-place | met | Six board-only fiducials were added in the patched KiCad source. |
+| 20 | Test-point coverage | review | ICT/flying-probe strategy still requires engineering review. |
 
-## Overall gate
+## Overall Gate
 
-**⛔ NOT RELEASED for production fabrication.** Placement and DRC-error gates are
-green and the fabrication-data package is documentation-complete, but items
-4, 6, 11, 12, 13, 16, 17, 18, 19, 20 are open. All are bounded engineering tasks
-— see `FAB_READINESS_ASSESSMENT.md` §5 for the ordered path to close them, and
-`analysis/` for the automated pre-fab review (kicad-happy) behind items 19–20.
+Production approval requires closure or signed waiver for schematic parity, placeholder disposition, chassis/mechanical constraints, stackup/impedance targets, BOM owner signoff, and manufacturer DFM/DFA review. See `FAB_READINESS_ASSESSMENT.md` and `07_engineering_reconcile/ENGINEERING_FIX_SUMMARY.md` for the detailed path.

@@ -1,0 +1,182 @@
+{
+  "Header": {
+    "GenerationSoftware": {
+      "Vendor": "KiCad",
+      "Application": "Pcbnew",
+      "Version": "10.0.3"
+    },
+    "CreationDate": "2026-07-07T21:47:07-07:00"
+  },
+  "GeneralSpecs": {
+    "ProjectId": {
+      "Name": "TFLN_AI_NODE_X2_SERVER_CHASSIS_IO",
+      "GUID": "54464c4e-5f41-4495-9f4e-4f44455f5832",
+      "Revision": "July_04-ENG-RECONCILE-01"
+    },
+    "Size": {
+      "X": 295.15,
+      "Y": 140.15
+    },
+    "LayerNumber": 4,
+    "BoardThickness": 1.6,
+    "Finish": "ENIG",
+    "ImpedanceControlled": true
+  },
+  "DesignRules": [
+    {
+      "Layers": "Outer",
+      "PadToPad": 0.2,
+      "PadToTrack": 0.2,
+      "TrackToTrack": 0.2,
+      "MinLineWidth": 0.1
+    },
+    {
+      "Layers": "Inner",
+      "PadToPad": 0.2,
+      "PadToTrack": 0.2,
+      "TrackToTrack": 0.2
+    }
+  ],
+  "FilesAttributes": [
+    {
+      "Path": "TFLN_AI_NODE_X2_SERVER_CHASSIS_IO-EO_Bias_Monitor.gtl",
+      "FileFunction": "Copper,L1,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "TFLN_AI_NODE_X2_SERVER_CHASSIS_IO-Electrical_GND.g1",
+      "FileFunction": "Copper,L2,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "TFLN_AI_NODE_X2_SERVER_CHASSIS_IO-Electrical_Power.g2",
+      "FileFunction": "Copper,L3,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "TFLN_AI_NODE_X2_SERVER_CHASSIS_IO-Slow_Control.gbl",
+      "FileFunction": "Copper,L4,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "TFLN_AI_NODE_X2_SERVER_CHASSIS_IO-F_Paste.gtp",
+      "FileFunction": "SolderPaste,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "TFLN_AI_NODE_X2_SERVER_CHASSIS_IO-B_Paste.gbp",
+      "FileFunction": "SolderPaste,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "TFLN_AI_NODE_X2_SERVER_CHASSIS_IO-F_Silkscreen.gto",
+      "FileFunction": "Legend,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "TFLN_AI_NODE_X2_SERVER_CHASSIS_IO-B_Silkscreen.gbo",
+      "FileFunction": "Legend,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "TFLN_AI_NODE_X2_SERVER_CHASSIS_IO-F_Mask.gts",
+      "FileFunction": "SolderMask,Top",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "TFLN_AI_NODE_X2_SERVER_CHASSIS_IO-B_Mask.gbs",
+      "FileFunction": "SolderMask,Bot",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "TFLN_AI_NODE_X2_SERVER_CHASSIS_IO-Edge_Cuts.gm1",
+      "FileFunction": "Profile",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "TFLN_AI_NODE_X2_SERVER_CHASSIS_IO-F_Fab.gbr",
+      "FileFunction": "AssemblyDrawing,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "TFLN_AI_NODE_X2_SERVER_CHASSIS_IO-B_Fab.gbr",
+      "FileFunction": "AssemblyDrawing,Bot",
+      "FilePolarity": "Positive"
+    }
+  ],
+  "MaterialStackup": [
+    {
+      "Type": "Legend",
+      "Name": "Top Silk Screen"
+    },
+    {
+      "Type": "SolderPaste",
+      "Name": "Top Solder Paste"
+    },
+    {
+      "Type": "SolderMask",
+      "Thickness": 0.01,
+      "Name": "Top Solder Mask"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "EO_Bias_Monitor"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.18,
+      "Material": "High-Tg-FR4",
+      "DielectricConstant": "4.2",
+      "LossTangent": "0.015",
+      "Name": "EO_Bias_Monitor/Electrical_GND",
+      "Notes": "Type: dielectric layer 1 (from EO_Bias_Monitor to Electrical_GND)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "Electrical_GND"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 1.09,
+      "Material": "High-Tg-FR4",
+      "DielectricConstant": "4.2",
+      "LossTangent": "0.015",
+      "Name": "Electrical_GND/Electrical_Power",
+      "Notes": "Type: dielectric layer 2 (from Electrical_GND to Electrical_Power)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "Electrical_Power"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.18,
+      "Material": "High-Tg-FR4",
+      "DielectricConstant": "4.2",
+      "LossTangent": "0.015",
+      "Name": "Electrical_Power/Slow_Control",
+      "Notes": "Type: dielectric layer 3 (from Electrical_Power to Slow_Control)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "Slow_Control"
+    },
+    {
+      "Type": "SolderMask",
+      "Thickness": 0.01,
+      "Name": "Bottom Solder Mask"
+    },
+    {
+      "Type": "SolderPaste",
+      "Name": "Bottom Solder Paste"
+    },
+    {
+      "Type": "Legend",
+      "Name": "Bottom Silk Screen"
+    }
+  ]
+}

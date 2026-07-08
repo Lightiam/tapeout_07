@@ -24,9 +24,9 @@ That overview identifies:
 - U30-U35 and U40-U45 = HBM groups for the two NCE dies
 
 Current open engineering items are:
-- KiCad DRC: 32 open violations
+- KiCad DRC: 0 errors, 0 unconnected items, 82 library/footprint mismatch warnings
 - Unconnected items: 0
-- Schematic parity: 564 open items
-- BOM: final procurement BOM to be signed after ECO/parity closure
+- Schematic parity: 214 warnings requiring the complete schematic/netlist source
+- BOM: current July_04 BOM review list; AVL, quantity, DNP/populate status, substitutions, and parity require owner signoff
 
 Please use `03_engineering_instructions/CURRENT_GAPS_TO_FLOW_MAP.csv` and `04_release_outputs_required/RELEASE_OUTPUTS_REQUIRED.csv` as the action checklist.

@@ -1,0 +1,80 @@
+(footprint "PQFN-40_5x6mm"
+  (layer "F.Cu")
+  (property "Datasheet" ""
+  	(at 0 0 0)
+  	(layer "F.Fab")
+  	(hide yes)
+  	(uuid "710e7f84-ab26-4b80-ba70-3ac79adb4a4b")
+  	(effects
+  		(font
+  			(size 1.27 1.27)
+  			(thickness 0.15)
+  		)
+  	)
+  )
+  (property "Description" "Renesas 90A Smart DrMOS Power Stage"
+  	(at 0 0 0)
+  	(layer "F.Fab")
+  	(hide yes)
+  	(uuid "78b19c21-8917-4075-8417-334038fe5eed")
+  	(effects
+  		(font
+  			(size 1.27 1.27)
+  			(thickness 0.15)
+  		)
+  	)
+  )
+  		(property "MPN" "ISL99390FRAZ"
+  	(at 0 0 0)
+  	(layer "F.Fab")
+  	(hide yes)
+  	(uuid "262a4058-a50f-4fbc-bee6-a1a4cd4b82e9")
+  	(effects
+  		(font
+  			(size 1.27 1.27)
+  			(thickness 0.15)
+  		)
+  	)
+  )
+(fp_line
+  	(start -2.5 -3)
+  	(end 2.5 -3)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "40bb70b6-9a32-4300-9666-7b0ec047be42")
+  )
+  (fp_line
+  	(start -2.5 3)
+  	(end -2.5 -3)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "d29e44f6-2cfe-410a-a7bd-aa22c7fe99ab")
+  )
+  (fp_line
+  	(start 2.5 -3)
+  	(end 2.5 3)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "6660a4ea-d99a-4ab1-90e4-ea2b3621162c")
+  )
+  (fp_line
+  	(start 2.5 3)
+  	(end -2.5 3)
+  	(stroke
+  		(width 0.12)
+  		(type default)
+  	)
+  	(layer "F.Fab")
+  	(uuid "cb09375b-458c-49ff-9f27-bc11eac83f53")
+  )
+  (embedded_fonts no)
+  )

@@ -1,0 +1,4486 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-07-07T21:57:06",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.3",
+    "schematic_parity": [
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C1 [L_TFLN_CTRL_00] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 70.5
+                    },
+                    "uuid": "a95f8be0-a14c-48e1-9af0-d0a26469762b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C2 [L_TFLN_CTRL_01] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 71.693548
+                    },
+                    "uuid": "fabcfcc2-8881-4639-8959-3f69f8015bc6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C3 [L_TFLN_CTRL_02] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 72.887096
+                    },
+                    "uuid": "cbab8058-ed98-42b1-a47e-9ed5ceb68875"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C4 [L_TFLN_CTRL_03] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 74.080645
+                    },
+                    "uuid": "98c86e97-8bd7-4517-8711-75c7e352d87e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C5 [L_TFLN_CTRL_04] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 75.274193
+                    },
+                    "uuid": "6cab0b60-f3a3-430b-b864-38a62e755228"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C6 [L_TFLN_CTRL_05] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 76.467741
+                    },
+                    "uuid": "ce4f1398-f297-497b-a229-08eec61a1330"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C7 [L_TFLN_CTRL_06] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 77.66129
+                    },
+                    "uuid": "86793c00-351b-4177-8fd5-c85d35a7bf00"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C8 [L_TFLN_CTRL_07] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 78.854838
+                    },
+                    "uuid": "17e91663-c0b5-4361-a0ff-26173772cfeb"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C9 [L_TFLN_CTRL_08] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 80.048387
+                    },
+                    "uuid": "c87dc41b-d049-45a6-961a-82436da547cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C10 [L_TFLN_CTRL_09] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 81.241935
+                    },
+                    "uuid": "cce19744-b292-4ac0-a950-b8f508f61502"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C11 [L_TFLN_CTRL_10] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 82.435483
+                    },
+                    "uuid": "f1f0c564-ca1d-48c2-86dd-8254e448614d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C12 [L_TFLN_CTRL_11] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 83.629032
+                    },
+                    "uuid": "6773204b-2408-4042-b4d7-d21af376d8f7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C13 [L_TFLN_CTRL_12] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 84.82258
+                    },
+                    "uuid": "16877c40-ed78-4f5c-b551-371c34fd63c6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C14 [L_TFLN_CTRL_13] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 86.016129
+                    },
+                    "uuid": "8546163d-7b9c-45cc-8413-655a7644e7a1"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C15 [L_TFLN_CTRL_14] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 87.209677
+                    },
+                    "uuid": "b1d4a1f2-1ed1-4303-9a95-4976fde4bc33"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C16 [L_TFLN_CTRL_15] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 88.403225
+                    },
+                    "uuid": "11dfdd94-406c-4442-add0-3e85269765e6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C17 [L_TFLN_CTRL_16] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 89.596774
+                    },
+                    "uuid": "6962beb5-545c-49a1-a850-29ed1df448a3"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C18 [L_TFLN_CTRL_17] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 90.790322
+                    },
+                    "uuid": "0c141308-24ab-44cb-a56d-c5c9d16f050e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C19 [L_TFLN_CTRL_18] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 91.98387
+                    },
+                    "uuid": "dd9e598d-99cb-4eae-bc9b-574ebde32e48"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C20 [L_TFLN_CTRL_19] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 93.177419
+                    },
+                    "uuid": "9dcd24bb-e1b1-4890-bc65-af3fe444f4e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C21 [L_TFLN_CTRL_20] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 94.370967
+                    },
+                    "uuid": "917afca2-98c8-48c2-8d8e-9bfbf6c6b531"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C22 [L_TFLN_CTRL_21] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 95.564516
+                    },
+                    "uuid": "ffa130c1-e146-420a-86e1-3b14d9c9ae3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C23 [L_TFLN_CTRL_22] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 96.758064
+                    },
+                    "uuid": "83ec2f66-eab4-4544-bdeb-0f62051afcd3"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C24 [L_TFLN_CTRL_23] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 97.951612
+                    },
+                    "uuid": "8c00e621-9280-43c2-9be8-6155710faa56"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C25 [L_TFLN_CTRL_24] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 99.145161
+                    },
+                    "uuid": "e9d1deb4-4453-477c-8bc8-76dd911f9005"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C26 [L_TFLN_CTRL_25] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 100.338709
+                    },
+                    "uuid": "17b1700f-38a7-4d53-8c01-33870912991b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C27 [L_TFLN_CTRL_26] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 101.532258
+                    },
+                    "uuid": "e840eb71-5b29-4b5b-be1c-83e28356ca84"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C28 [L_TFLN_CTRL_27] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 102.725806
+                    },
+                    "uuid": "92d0219a-173a-4c45-8cfd-e861327c2b69"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C29 [L_TFLN_CTRL_28] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 103.919354
+                    },
+                    "uuid": "75092701-71a3-44b0-82a9-67e11c8a1e45"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C30 [L_TFLN_CTRL_29] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 105.112903
+                    },
+                    "uuid": "77239e01-35e0-4728-bbb8-f85775fb0fa7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C31 [L_TFLN_CTRL_30] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 106.306451
+                    },
+                    "uuid": "8a5ce55b-3dca-40da-b5d1-0ade2769c7b6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C32 [L_TFLN_CTRL_31] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 133.199999,
+                        "y": 107.5
+                    },
+                    "uuid": "a0f5072a-7795-4fb8-b2e2-d110881d0525"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D1 [L_AUX_00] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 93.0,
+                        "y": 111.2
+                    },
+                    "uuid": "e2fd815f-c6fc-4f6d-bf3b-839214d7c2f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D2 [L_AUX_01] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 97.0,
+                        "y": 111.2
+                    },
+                    "uuid": "e846fd1b-2fc8-4232-8135-14d7f54ca4bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D3 [L_AUX_02] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 101.0,
+                        "y": 111.2
+                    },
+                    "uuid": "ab5e803f-406a-416e-a697-96fe5bd1aa8e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D4 [L_AUX_03] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 105.0,
+                        "y": 111.2
+                    },
+                    "uuid": "cc2f68d5-5965-4527-b273-a9018d09abd9"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D5 [L_AUX_04] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 109.0,
+                        "y": 111.2
+                    },
+                    "uuid": "b670c71a-6443-4f5c-8070-36413c0dfb81"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D6 [L_AUX_05] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 111.2
+                    },
+                    "uuid": "463f2fba-c170-481f-a08a-853cbc9f8a7c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D7 [L_AUX_06] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 117.0,
+                        "y": 111.2
+                    },
+                    "uuid": "30ed74b6-5a6c-489a-90a4-c5a286daa691"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D8 [L_AUX_07] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 121.0,
+                        "y": 111.2
+                    },
+                    "uuid": "3172fd99-7b00-4617-aac8-fd7dffce0d51"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D9 [L_AUX_08] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 125.0,
+                        "y": 111.2
+                    },
+                    "uuid": "70f0879a-6622-4efc-bc4d-d427dfa03a13"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D10 [L_AUX_09] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 129.0,
+                        "y": 111.2
+                    },
+                    "uuid": "4a8e68c5-343b-4ca3-8887-93679d467f97"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S1 [L_LOCAL_CTRL_00] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 69.8
+                    },
+                    "uuid": "a4b13835-a689-40ba-93af-17ba47c1bd81"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S2 [L_LOCAL_CTRL_01] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 71.038709
+                    },
+                    "uuid": "fdb2de84-ed9c-4508-a878-64554573f96c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S3 [L_LOCAL_CTRL_02] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 72.277419
+                    },
+                    "uuid": "e742c8cc-11c4-4310-a902-d6f38e2acd21"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S4 [L_LOCAL_CTRL_03] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 73.516129
+                    },
+                    "uuid": "5d868673-b871-458b-9c7e-b64cd68863df"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S5 [L_LOCAL_CTRL_04] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 74.754838
+                    },
+                    "uuid": "16a739f1-8fe7-4ce3-9310-6ea3e6802a1f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S6 [L_LOCAL_CTRL_05] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 75.993548
+                    },
+                    "uuid": "6470a7cf-9621-4a38-851d-4c414f5ffcbe"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S7 [L_LOCAL_CTRL_06] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 77.232258
+                    },
+                    "uuid": "1e854d32-0005-483f-aaed-7277ab5efc40"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S8 [L_LOCAL_CTRL_07] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 78.470967
+                    },
+                    "uuid": "fa2e8756-36af-4c75-b40f-824c48e4c15e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S9 [L_LOCAL_CTRL_08] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 79.709677
+                    },
+                    "uuid": "d9cc17c4-0af6-4f77-b837-3d742499e3ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S10 [L_LOCAL_CTRL_09] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 80.948387
+                    },
+                    "uuid": "b96e9137-db45-4f3d-89f3-77ce4cdb6662"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S11 [L_LOCAL_CTRL_10] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 82.187096
+                    },
+                    "uuid": "0f379e07-28b4-43ab-aa0b-9ac4e0ad8ad9"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S12 [L_LOCAL_CTRL_11] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 83.425806
+                    },
+                    "uuid": "2351054c-c7f1-4fd3-b51d-fc52776e4e26"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S13 [L_LOCAL_CTRL_12] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 84.664516
+                    },
+                    "uuid": "5c1bdf3a-8af3-456d-a631-bb48cd1d253b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S14 [L_LOCAL_CTRL_13] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 85.903225
+                    },
+                    "uuid": "386cd621-2d0e-4083-ab9a-f9389dba312f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S15 [L_LOCAL_CTRL_14] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 87.141935
+                    },
+                    "uuid": "fb9affbc-0aad-475f-ac13-521fc0cc6dc7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S16 [L_LOCAL_CTRL_15] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 88.380645
+                    },
+                    "uuid": "e152af61-65c5-472b-9a1e-3fdb63c7fb3e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S17 [L_LOCAL_CTRL_16] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 89.619354
+                    },
+                    "uuid": "a747185e-34a3-40b0-ae44-d711d17e1ce0"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S18 [L_LOCAL_CTRL_17] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 90.858064
+                    },
+                    "uuid": "564f7640-9215-49ac-a439-1c05058fb8e4"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S19 [L_LOCAL_CTRL_18] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 92.096774
+                    },
+                    "uuid": "373dee40-483a-4464-80c9-eafb7f8b19b2"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S20 [L_LOCAL_CTRL_19] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 93.335483
+                    },
+                    "uuid": "dad573cc-11f6-46be-b87e-c9c3c6af0023"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S21 [L_LOCAL_CTRL_20] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 94.574193
+                    },
+                    "uuid": "9552ca79-14af-4870-9650-9212c8d4e2a6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S22 [L_LOCAL_CTRL_21] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 95.812903
+                    },
+                    "uuid": "ccb640d5-8e36-47b4-bac8-7754502fadba"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S23 [L_LOCAL_CTRL_22] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 97.051612
+                    },
+                    "uuid": "e75937ef-6fd9-4c1d-91cf-d59426bb3eb6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S24 [L_LOCAL_CTRL_23] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 98.290322
+                    },
+                    "uuid": "4c6ebdff-4526-4b88-8704-b62fa1adb589"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S25 [L_LOCAL_CTRL_24] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 99.529032
+                    },
+                    "uuid": "57c3787b-12bd-4147-8d71-b93053597656"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S26 [L_LOCAL_CTRL_25] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 100.767741
+                    },
+                    "uuid": "afe1be9e-0016-4e93-b525-e9ab8c8d94b2"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S27 [L_LOCAL_CTRL_26] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 102.006451
+                    },
+                    "uuid": "07e068b9-6b33-40ef-82f6-49f22bea0d09"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S28 [L_LOCAL_CTRL_27] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 103.245161
+                    },
+                    "uuid": "b01292d0-2c50-4c9d-9959-ba679968076a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S29 [L_LOCAL_CTRL_28] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 104.48387
+                    },
+                    "uuid": "dbb039b3-f4be-4014-b113-8cf55147468d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S30 [L_LOCAL_CTRL_29] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 105.72258
+                    },
+                    "uuid": "fa702a6d-4132-4457-9da0-6ba08e027f74"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S31 [L_LOCAL_CTRL_30] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 106.96129
+                    },
+                    "uuid": "c5696bfc-75ab-465d-9238-236821c6484f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S32 [L_LOCAL_CTRL_31] of U1 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 88.8,
+                        "y": 108.199999
+                    },
+                    "uuid": "2a8e74d3-5505-4b00-9193-2bffff0a9113"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C1 [R_TFLN_CTRL_00] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 70.5
+                    },
+                    "uuid": "8ed6e6fa-7085-40d2-9c34-87771f7e35e8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C2 [R_TFLN_CTRL_01] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 71.693548
+                    },
+                    "uuid": "bd8c985b-38cc-45d6-a5da-60b783b363c7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C3 [R_TFLN_CTRL_02] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 72.887096
+                    },
+                    "uuid": "f1f3ea16-f79c-4260-80aa-8f0bf2c0d201"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C4 [R_TFLN_CTRL_03] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 74.080645
+                    },
+                    "uuid": "808cd645-b9e7-41bc-972d-cc6afff2eb1d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C5 [R_TFLN_CTRL_04] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 75.274193
+                    },
+                    "uuid": "465af9c4-8701-46b3-8f6b-5fe2e9b6b17b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C6 [R_TFLN_CTRL_05] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 76.467741
+                    },
+                    "uuid": "6390d82e-bc63-4fe8-b28d-d01ebba4836e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C7 [R_TFLN_CTRL_06] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 77.66129
+                    },
+                    "uuid": "4628033b-da34-4983-beae-712f7ab12cc8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C8 [R_TFLN_CTRL_07] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 78.854838
+                    },
+                    "uuid": "1210f107-c517-424b-8fea-bd4af07413f4"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C9 [R_TFLN_CTRL_08] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 80.048387
+                    },
+                    "uuid": "f2f23b72-894b-4173-80e5-ab18bbeb399b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C10 [R_TFLN_CTRL_09] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 81.241935
+                    },
+                    "uuid": "90a9600f-d121-4837-a4d8-5c2c7d365253"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C11 [R_TFLN_CTRL_10] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 82.435483
+                    },
+                    "uuid": "bb8dc7ac-1fcf-416e-90f8-fa3ba4c8b6ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C12 [R_TFLN_CTRL_11] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 83.629032
+                    },
+                    "uuid": "e3484b4f-2e22-4367-aa6a-9360e4fb1608"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C13 [R_TFLN_CTRL_12] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 84.82258
+                    },
+                    "uuid": "ced2bd23-4465-47ef-ae9d-ea746218d9e6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C14 [R_TFLN_CTRL_13] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 86.016129
+                    },
+                    "uuid": "56bcfa3e-176e-47f8-b180-05194a0deae6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C15 [R_TFLN_CTRL_14] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 87.209677
+                    },
+                    "uuid": "c76ab630-cca7-4175-90dd-1dd3c1dbd1bc"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C16 [R_TFLN_CTRL_15] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 88.403225
+                    },
+                    "uuid": "d48ef532-84cf-4fd6-b8a8-8dabaf145291"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C17 [R_TFLN_CTRL_16] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 89.596774
+                    },
+                    "uuid": "01a9b78a-9231-4681-87cb-cb1597047d83"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C18 [R_TFLN_CTRL_17] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 90.790322
+                    },
+                    "uuid": "1c2af2ba-f658-40bd-ac81-953ad8d051ce"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C19 [R_TFLN_CTRL_18] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 91.98387
+                    },
+                    "uuid": "aa63809a-b21a-4294-a3b4-443f0d160ddb"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C20 [R_TFLN_CTRL_19] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 93.177419
+                    },
+                    "uuid": "3ca240e4-7666-4722-bbd9-1c957bfa68b2"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C21 [R_TFLN_CTRL_20] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 94.370967
+                    },
+                    "uuid": "f33ae77d-e808-4759-aec0-2f7483179f45"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C22 [R_TFLN_CTRL_21] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 95.564516
+                    },
+                    "uuid": "cdd7952e-f504-42bc-b380-c5d882bfaf73"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C23 [R_TFLN_CTRL_22] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 96.758064
+                    },
+                    "uuid": "608a5880-90b8-4624-9b31-04914f825a0c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C24 [R_TFLN_CTRL_23] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 97.951612
+                    },
+                    "uuid": "c2116a4b-5b11-4ce8-bdab-f4ed8b619584"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C25 [R_TFLN_CTRL_24] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 99.145161
+                    },
+                    "uuid": "6d615c46-a664-4b0e-98bb-a0d2a15284bf"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C26 [R_TFLN_CTRL_25] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 100.338709
+                    },
+                    "uuid": "e82cbc16-3102-4fb6-bef2-8b533dc84f3b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C27 [R_TFLN_CTRL_26] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 101.532258
+                    },
+                    "uuid": "07d67674-bf8f-4478-b2be-21d0d5263682"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C28 [R_TFLN_CTRL_27] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 102.725806
+                    },
+                    "uuid": "4dcaf363-1ff8-4822-b798-4f13ea58b233"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C29 [R_TFLN_CTRL_28] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 103.919354
+                    },
+                    "uuid": "474c5ffe-3d8a-493a-8eb6-75fb342a39e7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C30 [R_TFLN_CTRL_29] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 105.112903
+                    },
+                    "uuid": "319a1d87-8a60-4343-8fe8-871176bd12cd"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C31 [R_TFLN_CTRL_30] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 106.306451
+                    },
+                    "uuid": "3dd2c62a-8ef4-4382-9914-9055b7ea132e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad C32 [R_TFLN_CTRL_31] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 176.8,
+                        "y": 107.5
+                    },
+                    "uuid": "e5781724-7eba-49c5-97bf-a9c2901e2b86"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D1 [R_AUX_00] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 181.0,
+                        "y": 111.2
+                    },
+                    "uuid": "3e041667-6027-4f8a-8945-4d6a2fbd3b04"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D2 [R_AUX_01] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 185.0,
+                        "y": 111.2
+                    },
+                    "uuid": "1ca05140-b084-414a-9eab-1961f1618fe9"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D3 [R_AUX_02] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 189.0,
+                        "y": 111.2
+                    },
+                    "uuid": "48e1ea5e-e669-407c-9727-5c1a0b243cb1"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D4 [R_AUX_03] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 193.0,
+                        "y": 111.2
+                    },
+                    "uuid": "4fd4a63a-f790-44d8-922a-b5db981e2790"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D5 [R_AUX_04] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 197.0,
+                        "y": 111.2
+                    },
+                    "uuid": "5a9ad0b5-83a7-45e6-b944-69751c034367"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D6 [R_AUX_05] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 201.0,
+                        "y": 111.2
+                    },
+                    "uuid": "7eabe9df-f365-4229-9174-6f5a84dcc362"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D7 [R_AUX_06] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 205.0,
+                        "y": 111.2
+                    },
+                    "uuid": "31a81400-564d-4a11-8039-8dc96eb90dad"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D8 [R_AUX_07] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 209.0,
+                        "y": 111.2
+                    },
+                    "uuid": "fe3ad7ec-62c1-4e1f-a7a0-06e6542ff68b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D9 [R_AUX_08] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 213.0,
+                        "y": 111.2
+                    },
+                    "uuid": "bbcd2961-1ddc-4b6a-b431-b8f38c372105"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad D10 [R_AUX_09] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 217.0,
+                        "y": 111.2
+                    },
+                    "uuid": "38803cfb-3c36-47bf-927a-fbed1e0971e3"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S1 [R_LOCAL_CTRL_00] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 69.8
+                    },
+                    "uuid": "6425d392-589d-4652-9e77-8e64d7bdd7ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S2 [R_LOCAL_CTRL_01] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 71.038709
+                    },
+                    "uuid": "99ed45de-60a8-4417-a37e-709fddca2aca"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S3 [R_LOCAL_CTRL_02] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 72.277419
+                    },
+                    "uuid": "3dab9183-9c65-4139-9d04-48cb8fc0f90b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S4 [R_LOCAL_CTRL_03] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 73.516129
+                    },
+                    "uuid": "3ca917d2-2b39-4f06-a9e9-51f54744a7fd"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S5 [R_LOCAL_CTRL_04] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 74.754838
+                    },
+                    "uuid": "22646557-1540-494c-a99b-59b03638a566"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S6 [R_LOCAL_CTRL_05] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 75.993548
+                    },
+                    "uuid": "9fd63a06-b25d-4758-a9c9-81866fec468e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S7 [R_LOCAL_CTRL_06] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 77.232258
+                    },
+                    "uuid": "a1c57781-f423-4a16-84f2-d6ac17a48529"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S8 [R_LOCAL_CTRL_07] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 78.470967
+                    },
+                    "uuid": "55d55249-850b-4640-afc4-98e1d88d2130"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S9 [R_LOCAL_CTRL_08] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 79.709677
+                    },
+                    "uuid": "94c67b4a-ca5f-4608-b4de-6c03dc585c47"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S10 [R_LOCAL_CTRL_09] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 80.948387
+                    },
+                    "uuid": "877611a4-c23a-40bd-bcc2-a02f47688c42"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S11 [R_LOCAL_CTRL_10] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 82.187096
+                    },
+                    "uuid": "279af01e-5627-4351-9050-457ac5a112a3"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S12 [R_LOCAL_CTRL_11] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 83.425806
+                    },
+                    "uuid": "9ef05148-f046-4cd1-9fc9-6e2112c98668"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S13 [R_LOCAL_CTRL_12] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 84.664516
+                    },
+                    "uuid": "f1240caa-f74a-4967-a29a-642396e5b48c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S14 [R_LOCAL_CTRL_13] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 85.903225
+                    },
+                    "uuid": "7bac43c4-0752-45ac-b937-d62499dd975a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S15 [R_LOCAL_CTRL_14] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 87.141935
+                    },
+                    "uuid": "0a0c783b-e636-4794-be9e-9ebb195cf636"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S16 [R_LOCAL_CTRL_15] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 88.380645
+                    },
+                    "uuid": "a7caf51c-64d1-4281-9e22-3de1e9c4a9cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S17 [R_LOCAL_CTRL_16] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 89.619354
+                    },
+                    "uuid": "fb7459ee-55cd-44be-b3c2-09230a71f4d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S18 [R_LOCAL_CTRL_17] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 90.858064
+                    },
+                    "uuid": "cb6f947f-6e75-4c75-8e82-b4c91af0940b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S19 [R_LOCAL_CTRL_18] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 92.096774
+                    },
+                    "uuid": "64bcb94d-b816-4d3a-b017-a45e531174e3"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S20 [R_LOCAL_CTRL_19] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 93.335483
+                    },
+                    "uuid": "840c6a13-285b-469a-b453-afd3eaf1ae8f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S21 [R_LOCAL_CTRL_20] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 94.574193
+                    },
+                    "uuid": "26818419-509b-4a12-90b2-63b4e20b8166"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S22 [R_LOCAL_CTRL_21] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 95.812903
+                    },
+                    "uuid": "5785fd6f-99cd-471c-8b47-2fdd1fc40305"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S23 [R_LOCAL_CTRL_22] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 97.051612
+                    },
+                    "uuid": "b8f0b4e7-abd8-48a2-87cf-9929cab1c0cd"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S24 [R_LOCAL_CTRL_23] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 98.290322
+                    },
+                    "uuid": "3252d391-68bb-449b-a520-6c4a1acdf62d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S25 [R_LOCAL_CTRL_24] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 99.529032
+                    },
+                    "uuid": "e250e1be-eda6-446a-97bc-cc65fb06b871"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S26 [R_LOCAL_CTRL_25] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 100.767741
+                    },
+                    "uuid": "38dc2845-6d16-498d-b92c-1771384d6bf1"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S27 [R_LOCAL_CTRL_26] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 102.006451
+                    },
+                    "uuid": "e8c52a47-176d-4b90-bad4-94cb3f1f7c70"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S28 [R_LOCAL_CTRL_27] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 103.245161
+                    },
+                    "uuid": "8d7c56b2-4404-4a44-b163-bae10b39f956"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S29 [R_LOCAL_CTRL_28] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 104.48387
+                    },
+                    "uuid": "64f156a8-7126-4b58-8c53-8f58a034f161"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S30 [R_LOCAL_CTRL_29] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 105.72258
+                    },
+                    "uuid": "223293a8-2400-4d0b-8cf0-bf0bf5e508c4"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S31 [R_LOCAL_CTRL_30] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 106.96129
+                    },
+                    "uuid": "1f348fda-d7fa-422e-bf68-c40e3f79e37c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "No corresponding pin found in schematic",
+            "items": [
+                {
+                    "description": "Pad S32 [R_LOCAL_CTRL_31] of U4 on EO_Bias_Monitor",
+                    "pos": {
+                        "x": 221.2,
+                        "y": 108.199999
+                    },
+                    "uuid": "43b78830-8084-437e-a9c6-d20714bc8de7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U221",
+                    "pos": {
+                        "x": 252.8,
+                        "y": 156.0
+                    },
+                    "uuid": "e7b0efb7-1ca3-4adb-86b8-ff71b3a4b072"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U232",
+                    "pos": {
+                        "x": 235.0,
+                        "y": 165.0
+                    },
+                    "uuid": "0843c32d-044a-4bdd-9981-35afc5b0bc4b"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint C14",
+                    "pos": {
+                        "x": 205.5,
+                        "y": 116.0
+                    },
+                    "uuid": "510d5449-c5c4-425b-b8c3-e921a6b24b15"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U200",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 162.0
+                    },
+                    "uuid": "64f086b9-9296-47a7-981e-16cd47c4c465"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint J21",
+                    "pos": {
+                        "x": 110.0,
+                        "y": 13.0
+                    },
+                    "uuid": "292c9fb8-ae58-4222-9893-40540e084f8f"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U226",
+                    "pos": {
+                        "x": 128.199999,
+                        "y": 165.0
+                    },
+                    "uuid": "5369b535-9e18-4b0e-a0c9-31639f7ee5e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U224",
+                    "pos": {
+                        "x": 92.6,
+                        "y": 165.0
+                    },
+                    "uuid": "37cb69e9-99a9-4406-a852-86019630538f"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U215",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 156.0
+                    },
+                    "uuid": "f980ea90-ef30-41f2-a077-f35aa62ef2fb"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint C10",
+                    "pos": {
+                        "x": 188.3,
+                        "y": 116.0
+                    },
+                    "uuid": "39ffeb98-ac8d-41a8-a337-7352618ba085"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U263",
+                    "pos": {
+                        "x": 102.0,
+                        "y": 38.0
+                    },
+                    "uuid": "d06376c1-2fd2-46c5-9098-1510d8b6b1af"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U273",
+                    "pos": {
+                        "x": 238.0,
+                        "y": 38.0
+                    },
+                    "uuid": "9bb5b2e5-b808-4e2d-a5a5-4675877cac62"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U53",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 53.0
+                    },
+                    "uuid": "14459985-6362-4336-93bc-1460cdd12d20"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U271",
+                    "pos": {
+                        "x": 218.0,
+                        "y": 38.0
+                    },
+                    "uuid": "c840ae8e-143f-4b5a-9844-41cec48408c5"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U202",
+                    "pos": {
+                        "x": 40.0,
+                        "y": 162.0
+                    },
+                    "uuid": "82dc864c-ed7b-4a4b-9654-fa10651b7422"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint C11",
+                    "pos": {
+                        "x": 192.6,
+                        "y": 116.0
+                    },
+                    "uuid": "4c9f9f5b-96b4-49a1-9ff8-4b2c7b6ccb24"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U222",
+                    "pos": {
+                        "x": 57.0,
+                        "y": 165.0
+                    },
+                    "uuid": "65d4f318-28d6-4315-94be-f8763d9c001f"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U261",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 38.0
+                    },
+                    "uuid": "ed0753eb-4b2b-4eaf-a1ce-efaa2d57d1bd"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint C9",
+                    "pos": {
+                        "x": 184.0,
+                        "y": 116.0
+                    },
+                    "uuid": "5d2b320c-6031-40d1-9a4f-987d40db9c07"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U219",
+                    "pos": {
+                        "x": 217.2,
+                        "y": 156.0
+                    },
+                    "uuid": "285fc225-24ee-4a73-aa57-22deb0e94ebc"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U211",
+                    "pos": {
+                        "x": 74.8,
+                        "y": 156.0
+                    },
+                    "uuid": "4a966914-e7aa-4f1a-b71a-5843d5ed14ce"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint J20",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 13.0
+                    },
+                    "uuid": "299cc2b0-0114-427c-b23f-1875868b42ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint C16",
+                    "pos": {
+                        "x": 214.1,
+                        "y": 116.0
+                    },
+                    "uuid": "9c83fec0-d5b6-4334-888b-2290749889fa"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U44",
+                    "pos": {
+                        "x": 204.0,
+                        "y": 103.0
+                    },
+                    "uuid": "507178bd-af09-4f12-8e96-92047a277669"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U260",
+                    "pos": {
+                        "x": 72.0,
+                        "y": 38.0
+                    },
+                    "uuid": "2075ce75-6143-42ec-8882-c29fc81cc4d4"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U203",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 162.0
+                    },
+                    "uuid": "039c63ec-6ba2-446f-96a8-931c88ff0559"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U227",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 165.0
+                    },
+                    "uuid": "e3dc63ea-c014-4e22-9dd1-7a99a32427d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U241",
+                    "pos": {
+                        "x": 140.0,
+                        "y": 162.0
+                    },
+                    "uuid": "f45174a0-7855-403a-b77b-c9991c575824"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U231",
+                    "pos": {
+                        "x": 217.2,
+                        "y": 165.0
+                    },
+                    "uuid": "3c11dbf9-29bc-4b81-b138-66448a16b9ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U41",
+                    "pos": {
+                        "x": 214.0,
+                        "y": 75.0
+                    },
+                    "uuid": "b55d92b7-2997-4552-b246-9685742e321e"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U217",
+                    "pos": {
+                        "x": 181.6,
+                        "y": 156.0
+                    },
+                    "uuid": "f6e0100b-1591-4573-9836-aea0b58f8674"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U233",
+                    "pos": {
+                        "x": 252.8,
+                        "y": 165.0
+                    },
+                    "uuid": "ea5b7ee9-8cdd-496c-8865-4ad8c1739967"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U42",
+                    "pos": {
+                        "x": 184.0,
+                        "y": 103.0
+                    },
+                    "uuid": "8ed45edc-58f7-4711-be05-709b33a35212"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U52",
+                    "pos": {
+                        "x": 157.7,
+                        "y": 53.0
+                    },
+                    "uuid": "52210734-0a81-4fea-afe2-c96d6b44948f"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint C13",
+                    "pos": {
+                        "x": 201.2,
+                        "y": 116.0
+                    },
+                    "uuid": "1d1b08b1-6575-46e7-8514-d6cc1397d1f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint J22",
+                    "pos": {
+                        "x": 190.0,
+                        "y": 13.0
+                    },
+                    "uuid": "b16ab7e6-dfb8-4f54-aa6a-8d512b8554de"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint C12",
+                    "pos": {
+                        "x": 196.9,
+                        "y": 116.0
+                    },
+                    "uuid": "bde1b3c6-1449-4d5a-acb8-20e719a34471"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U242",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 162.0
+                    },
+                    "uuid": "900c226f-7949-49a4-a61a-677c073f8a90"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U251",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 28.0
+                    },
+                    "uuid": "1285bde1-cef1-4707-99cb-5b1b4ee2e6d6"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U262",
+                    "pos": {
+                        "x": 92.0,
+                        "y": 38.0
+                    },
+                    "uuid": "07a240b3-f2ad-4074-99ee-6d146fb05889"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U228",
+                    "pos": {
+                        "x": 163.8,
+                        "y": 165.0
+                    },
+                    "uuid": "f820efcb-4015-4e92-8c55-a360147da0a9"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint C15",
+                    "pos": {
+                        "x": 209.8,
+                        "y": 116.0
+                    },
+                    "uuid": "353d5d03-fa0e-4354-b81b-3d0fccd92744"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U201",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 162.0
+                    },
+                    "uuid": "a0bbafaa-d1cd-4eee-85f1-b909f94c4086"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U50",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 53.0
+                    },
+                    "uuid": "c3e6a3c9-0825-4844-8cbf-07a851e83723"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U218",
+                    "pos": {
+                        "x": 199.4,
+                        "y": 156.0
+                    },
+                    "uuid": "2693bf4f-607d-4340-8447-d1f83a0d9288"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U40",
+                    "pos": {
+                        "x": 204.0,
+                        "y": 75.0
+                    },
+                    "uuid": "30e4167f-8372-4f47-b95e-1a98e84d84cd"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U45",
+                    "pos": {
+                        "x": 214.0,
+                        "y": 103.0
+                    },
+                    "uuid": "a07fb3c3-f8b9-4fa9-aa3e-e450ab480a98"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint J23",
+                    "pos": {
+                        "x": 270.0,
+                        "y": 13.0
+                    },
+                    "uuid": "96d6f540-852f-49f3-9b95-bd6344c967d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U43",
+                    "pos": {
+                        "x": 194.0,
+                        "y": 103.0
+                    },
+                    "uuid": "debeb1e1-71a9-4571-a1d7-7625a5c9a24c"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U380",
+                    "pos": {
+                        "x": 155.0,
+                        "y": 145.0
+                    },
+                    "uuid": "7b5e47bf-8766-4c29-8c47-2d48cf324c17"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U230",
+                    "pos": {
+                        "x": 199.4,
+                        "y": 165.0
+                    },
+                    "uuid": "8d920828-50ff-486c-8971-6c96d0196df8"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U229",
+                    "pos": {
+                        "x": 181.6,
+                        "y": 165.0
+                    },
+                    "uuid": "cf6acf1a-90cc-430b-8355-883517bbd25d"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U243",
+                    "pos": {
+                        "x": 154.0,
+                        "y": 162.0
+                    },
+                    "uuid": "7d9596ce-9e12-4c9e-ba18-22a3ad02be67"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U220",
+                    "pos": {
+                        "x": 235.0,
+                        "y": 156.0
+                    },
+                    "uuid": "31b52e91-d291-4d21-aee4-28ea03fcc4b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U216",
+                    "pos": {
+                        "x": 163.8,
+                        "y": 156.0
+                    },
+                    "uuid": "dcaee8ee-f06f-4e35-86f9-3c0befb52960"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U213",
+                    "pos": {
+                        "x": 110.4,
+                        "y": 156.0
+                    },
+                    "uuid": "c778322a-863e-44bd-a7eb-4975f2a55679"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U210",
+                    "pos": {
+                        "x": 57.0,
+                        "y": 156.0
+                    },
+                    "uuid": "03a9c3a6-4dcf-4e3f-88b8-ea9b062a1084"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U270",
+                    "pos": {
+                        "x": 208.0,
+                        "y": 38.0
+                    },
+                    "uuid": "76bf252e-765c-4238-b9e0-2f7492439b0b"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U51",
+                    "pos": {
+                        "x": 152.3,
+                        "y": 53.0
+                    },
+                    "uuid": "91a987ce-663d-46cb-b124-27c30c78b514"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U225",
+                    "pos": {
+                        "x": 110.4,
+                        "y": 165.0
+                    },
+                    "uuid": "36bc4ec7-f334-463e-b8ab-2d67279ffd07"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U240",
+                    "pos": {
+                        "x": 133.0,
+                        "y": 162.0
+                    },
+                    "uuid": "d655da2f-4d86-4d6c-ab1f-505cdd079271"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U272",
+                    "pos": {
+                        "x": 228.0,
+                        "y": 38.0
+                    },
+                    "uuid": "3afcee05-87da-4c10-8c2a-6a2697125eda"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U214",
+                    "pos": {
+                        "x": 128.199999,
+                        "y": 156.0
+                    },
+                    "uuid": "17c9eb7d-01c9-4391-bb32-b5b02ce34c67"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 155.0,
+                        "y": 89.0
+                    },
+                    "uuid": "10820396-3395-4940-936f-726afa17e191"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U212",
+                    "pos": {
+                        "x": 92.6,
+                        "y": 156.0
+                    },
+                    "uuid": "cac700be-7b1e-4e67-acfb-9b53b0c8377e"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U250",
+                    "pos": {
+                        "x": 149.0,
+                        "y": 28.0
+                    },
+                    "uuid": "a06d2511-d76a-4585-9cee-a86ee176ccad"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint U223",
+                    "pos": {
+                        "x": 74.8,
+                        "y": 165.0
+                    },
+                    "uuid": "d210342b-921e-40e9-a7a4-4d30bd22581a"
+                }
+            ],
+            "severity": "warning",
+            "type": "extra_footprint"
+        }
+    ],
+    "source": "TFLN_AI_NODE_X2_SERVER_CHASSIS_IO.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Footprint 'BGA-1024_12x9mm' does not match copy in library 'LightRail'",
+            "items": [
+                {
+                    "description": "Footprint U35",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 103.0
+                    },
+                    "uuid": "80027428-4db5-4169-8a15-23c0c5533bae"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U221",
+                    "pos": {
+                        "x": 252.8,
+                        "y": 156.0
+                    },
+                    "uuid": "e7b0efb7-1ca3-4adb-86b8-ff71b3a4b072"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U232",
+                    "pos": {
+                        "x": 235.0,
+                        "y": 165.0
+                    },
+                    "uuid": "0843c32d-044a-4bdd-9981-35afc5b0bc4b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C14",
+                    "pos": {
+                        "x": 205.5,
+                        "y": 116.0
+                    },
+                    "uuid": "510d5449-c5c4-425b-b8c3-e921a6b24b15"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-48-1EP_7x7mm_P0.5mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U200",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 162.0
+                    },
+                    "uuid": "64f086b9-9296-47a7-981e-16cd47c4c465"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 104.6,
+                        "y": 116.0
+                    },
+                    "uuid": "f26f0e88-bbff-46c4-969f-4719ce6837a6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PCIE_x16_SLOT' does not match copy in library 'LightRail'",
+            "items": [
+                {
+                    "description": "Footprint J21",
+                    "pos": {
+                        "x": 110.0,
+                        "y": 13.0
+                    },
+                    "uuid": "292c9fb8-ae58-4222-9893-40540e084f8f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U226",
+                    "pos": {
+                        "x": 128.199999,
+                        "y": 165.0
+                    },
+                    "uuid": "5369b535-9e18-4b0e-a0c9-31639f7ee5e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U224",
+                    "pos": {
+                        "x": 92.6,
+                        "y": 165.0
+                    },
+                    "uuid": "37cb69e9-99a9-4406-a852-86019630538f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U215",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 156.0
+                    },
+                    "uuid": "f980ea90-ef30-41f2-a077-f35aa62ef2fb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C10",
+                    "pos": {
+                        "x": 188.3,
+                        "y": 116.0
+                    },
+                    "uuid": "39ffeb98-ac8d-41a8-a337-7352618ba085"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-48-1EP_7x7mm_P0.5mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U263",
+                    "pos": {
+                        "x": 102.0,
+                        "y": 38.0
+                    },
+                    "uuid": "d06376c1-2fd2-46c5-9098-1510d8b6b1af"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-48-1EP_7x7mm_P0.5mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U273",
+                    "pos": {
+                        "x": 238.0,
+                        "y": 38.0
+                    },
+                    "uuid": "9bb5b2e5-b808-4e2d-a5a5-4675877cac62"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-32-1EP_5x5mm_P0.5mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U53",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 53.0
+                    },
+                    "uuid": "14459985-6362-4336-93bc-1460cdd12d20"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-48-1EP_7x7mm_P0.5mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U271",
+                    "pos": {
+                        "x": 218.0,
+                        "y": 38.0
+                    },
+                    "uuid": "c840ae8e-143f-4b5a-9844-41cec48408c5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-48-1EP_7x7mm_P0.5mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U202",
+                    "pos": {
+                        "x": 40.0,
+                        "y": 162.0
+                    },
+                    "uuid": "82dc864c-ed7b-4a4b-9654-fa10651b7422"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C11",
+                    "pos": {
+                        "x": 192.6,
+                        "y": 116.0
+                    },
+                    "uuid": "4c9f9f5b-96b4-49a1-9ff8-4b2c7b6ccb24"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U222",
+                    "pos": {
+                        "x": 57.0,
+                        "y": 165.0
+                    },
+                    "uuid": "65d4f318-28d6-4315-94be-f8763d9c001f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-48-1EP_7x7mm_P0.5mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U261",
+                    "pos": {
+                        "x": 82.0,
+                        "y": 38.0
+                    },
+                    "uuid": "ed0753eb-4b2b-4eaf-a1ce-efaa2d57d1bd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C9",
+                    "pos": {
+                        "x": 184.0,
+                        "y": 116.0
+                    },
+                    "uuid": "5d2b320c-6031-40d1-9a4f-987d40db9c07"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U219",
+                    "pos": {
+                        "x": 217.2,
+                        "y": 156.0
+                    },
+                    "uuid": "285fc225-24ee-4a73-aa57-22deb0e94ebc"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'BGA-1024_12x9mm' does not match copy in library 'LightRail'",
+            "items": [
+                {
+                    "description": "Footprint U31",
+                    "pos": {
+                        "x": 106.0,
+                        "y": 75.0
+                    },
+                    "uuid": "f41dca4a-18c6-4321-8a9a-ded74eb606ef"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U211",
+                    "pos": {
+                        "x": 74.8,
+                        "y": 156.0
+                    },
+                    "uuid": "4a966914-e7aa-4f1a-b71a-5843d5ed14ce"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PCIE_x16_SLOT' does not match copy in library 'LightRail'",
+            "items": [
+                {
+                    "description": "Footprint J20",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 13.0
+                    },
+                    "uuid": "299cc2b0-0114-427c-b23f-1875868b42ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C16",
+                    "pos": {
+                        "x": 214.1,
+                        "y": 116.0
+                    },
+                    "uuid": "9c83fec0-d5b6-4334-888b-2290749889fa"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'BGA-1024_12x9mm' does not match copy in library 'LightRail'",
+            "items": [
+                {
+                    "description": "Footprint U44",
+                    "pos": {
+                        "x": 204.0,
+                        "y": 103.0
+                    },
+                    "uuid": "507178bd-af09-4f12-8e96-92047a277669"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C7",
+                    "pos": {
+                        "x": 121.8,
+                        "y": 116.0
+                    },
+                    "uuid": "fc7bbe8d-1b1f-4fc8-8f81-892bcb1af7f2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-48-1EP_7x7mm_P0.5mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U260",
+                    "pos": {
+                        "x": 72.0,
+                        "y": 38.0
+                    },
+                    "uuid": "2075ce75-6143-42ec-8882-c29fc81cc4d4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-48-1EP_7x7mm_P0.5mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U203",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 162.0
+                    },
+                    "uuid": "039c63ec-6ba2-446f-96a8-931c88ff0559"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'BGA-1024_12x9mm' does not match copy in library 'LightRail'",
+            "items": [
+                {
+                    "description": "Footprint U30",
+                    "pos": {
+                        "x": 96.0,
+                        "y": 75.0
+                    },
+                    "uuid": "cc7cfafe-f08c-4146-9659-6f0d42352d0e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U227",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 165.0
+                    },
+                    "uuid": "e3dc63ea-c014-4e22-9dd1-7a99a32427d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT-23-5' does not match copy in library 'Package_TO_SOT_SMD'",
+            "items": [
+                {
+                    "description": "Footprint U241",
+                    "pos": {
+                        "x": 140.0,
+                        "y": 162.0
+                    },
+                    "uuid": "f45174a0-7855-403a-b77b-c9991c575824"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'BGA-1024_12x9mm' does not match copy in library 'LightRail'",
+            "items": [
+                {
+                    "description": "Footprint U32",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 75.0
+                    },
+                    "uuid": "1a40a63f-a6e2-4ff1-847a-e664ab610db7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U231",
+                    "pos": {
+                        "x": 217.2,
+                        "y": 165.0
+                    },
+                    "uuid": "3c11dbf9-29bc-4b81-b138-66448a16b9ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'BGA-1024_12x9mm' does not match copy in library 'LightRail'",
+            "items": [
+                {
+                    "description": "Footprint U41",
+                    "pos": {
+                        "x": 214.0,
+                        "y": 75.0
+                    },
+                    "uuid": "b55d92b7-2997-4552-b246-9685742e321e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U217",
+                    "pos": {
+                        "x": 181.6,
+                        "y": 156.0
+                    },
+                    "uuid": "f6e0100b-1591-4573-9836-aea0b58f8674"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C5",
+                    "pos": {
+                        "x": 113.2,
+                        "y": 116.0
+                    },
+                    "uuid": "4e3e82cc-3b17-4b43-8f1d-0697fd245e72"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U233",
+                    "pos": {
+                        "x": 252.8,
+                        "y": 165.0
+                    },
+                    "uuid": "ea5b7ee9-8cdd-496c-8865-4ad8c1739967"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'BGA-1024_12x9mm' does not match copy in library 'LightRail'",
+            "items": [
+                {
+                    "description": "Footprint U42",
+                    "pos": {
+                        "x": 184.0,
+                        "y": 103.0
+                    },
+                    "uuid": "8ed45edc-58f7-4711-be05-709b33a35212"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-32-1EP_5x5mm_P0.5mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U52",
+                    "pos": {
+                        "x": 157.7,
+                        "y": 53.0
+                    },
+                    "uuid": "52210734-0a81-4fea-afe2-c96d6b44948f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C13",
+                    "pos": {
+                        "x": 201.2,
+                        "y": 116.0
+                    },
+                    "uuid": "1d1b08b1-6575-46e7-8514-d6cc1397d1f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 100.3,
+                        "y": 116.0
+                    },
+                    "uuid": "f64e62f0-2628-40b1-890c-9eb71da5f3ea"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PCIE_x16_SLOT' does not match copy in library 'LightRail'",
+            "items": [
+                {
+                    "description": "Footprint J22",
+                    "pos": {
+                        "x": 190.0,
+                        "y": 13.0
+                    },
+                    "uuid": "b16ab7e6-dfb8-4f54-aa6a-8d512b8554de"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C12",
+                    "pos": {
+                        "x": 196.9,
+                        "y": 116.0
+                    },
+                    "uuid": "bde1b3c6-1449-4d5a-acb8-20e719a34471"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT-23-5' does not match copy in library 'Package_TO_SOT_SMD'",
+            "items": [
+                {
+                    "description": "Footprint U242",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 162.0
+                    },
+                    "uuid": "900c226f-7949-49a4-a61a-677c073f8a90"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-48-1EP_7x7mm_P0.5mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U251",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 28.0
+                    },
+                    "uuid": "1285bde1-cef1-4707-99cb-5b1b4ee2e6d6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-48-1EP_7x7mm_P0.5mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U262",
+                    "pos": {
+                        "x": 92.0,
+                        "y": 38.0
+                    },
+                    "uuid": "07a240b3-f2ad-4074-99ee-6d146fb05889"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U228",
+                    "pos": {
+                        "x": 163.8,
+                        "y": 165.0
+                    },
+                    "uuid": "f820efcb-4015-4e92-8c55-a360147da0a9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C15",
+                    "pos": {
+                        "x": 209.8,
+                        "y": 116.0
+                    },
+                    "uuid": "353d5d03-fa0e-4354-b81b-3d0fccd92744"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'BGA-1024_12x9mm' does not match copy in library 'LightRail'",
+            "items": [
+                {
+                    "description": "Footprint U33",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 75.0
+                    },
+                    "uuid": "019ea79d-338f-47c5-b520-60bdda4782fa"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C4",
+                    "pos": {
+                        "x": 108.9,
+                        "y": 116.0
+                    },
+                    "uuid": "27f2ab66-3bd9-4f31-9736-3bd6d856c1d7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-48-1EP_7x7mm_P0.5mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U201",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 162.0
+                    },
+                    "uuid": "a0bbafaa-d1cd-4eee-85f1-b909f94c4086"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-32-1EP_5x5mm_P0.5mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U50",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 53.0
+                    },
+                    "uuid": "c3e6a3c9-0825-4844-8cbf-07a851e83723"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U218",
+                    "pos": {
+                        "x": 199.4,
+                        "y": 156.0
+                    },
+                    "uuid": "2693bf4f-607d-4340-8447-d1f83a0d9288"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C6",
+                    "pos": {
+                        "x": 117.5,
+                        "y": 116.0
+                    },
+                    "uuid": "967db1ab-21f2-43de-941b-2fe9f7809e74"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'BGA-1024_12x9mm' does not match copy in library 'LightRail'",
+            "items": [
+                {
+                    "description": "Footprint U40",
+                    "pos": {
+                        "x": 204.0,
+                        "y": 75.0
+                    },
+                    "uuid": "30e4167f-8372-4f47-b95e-1a98e84d84cd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C8",
+                    "pos": {
+                        "x": 126.1,
+                        "y": 116.0
+                    },
+                    "uuid": "d4928db7-76ea-4022-93dc-7190469124f6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'BGA-1024_12x9mm' does not match copy in library 'LightRail'",
+            "items": [
+                {
+                    "description": "Footprint U45",
+                    "pos": {
+                        "x": 214.0,
+                        "y": 103.0
+                    },
+                    "uuid": "a07fb3c3-f8b9-4fa9-aa3e-e450ab480a98"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'C_0402_1005Metric' does not match copy in library 'Capacitor_SMD'",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 96.0,
+                        "y": 116.0
+                    },
+                    "uuid": "1ccbbfec-f44c-40e2-abd5-32c7921a88de"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PCIE_x16_SLOT' does not match copy in library 'LightRail'",
+            "items": [
+                {
+                    "description": "Footprint J23",
+                    "pos": {
+                        "x": 270.0,
+                        "y": 13.0
+                    },
+                    "uuid": "96d6f540-852f-49f3-9b95-bd6344c967d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'BGA-1024_12x9mm' does not match copy in library 'LightRail'",
+            "items": [
+                {
+                    "description": "Footprint U43",
+                    "pos": {
+                        "x": 194.0,
+                        "y": 103.0
+                    },
+                    "uuid": "debeb1e1-71a9-4571-a1d7-7625a5c9a24c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-48-1EP_7x7mm_P0.5mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U380",
+                    "pos": {
+                        "x": 155.0,
+                        "y": 145.0
+                    },
+                    "uuid": "7b5e47bf-8766-4c29-8c47-2d48cf324c17"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U230",
+                    "pos": {
+                        "x": 199.4,
+                        "y": 165.0
+                    },
+                    "uuid": "8d920828-50ff-486c-8971-6c96d0196df8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U229",
+                    "pos": {
+                        "x": 181.6,
+                        "y": 165.0
+                    },
+                    "uuid": "cf6acf1a-90cc-430b-8355-883517bbd25d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'BGA-2500_40x40mm_P0.8mm' does not match copy in library 'LightRail'",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 111.0,
+                        "y": 89.0
+                    },
+                    "uuid": "aa2501e8-d03d-4488-8bc2-aa4ff4124618"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT-23-5' does not match copy in library 'Package_TO_SOT_SMD'",
+            "items": [
+                {
+                    "description": "Footprint U243",
+                    "pos": {
+                        "x": 154.0,
+                        "y": 162.0
+                    },
+                    "uuid": "7d9596ce-9e12-4c9e-ba18-22a3ad02be67"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U220",
+                    "pos": {
+                        "x": 235.0,
+                        "y": 156.0
+                    },
+                    "uuid": "31b52e91-d291-4d21-aee4-28ea03fcc4b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U216",
+                    "pos": {
+                        "x": 163.8,
+                        "y": 156.0
+                    },
+                    "uuid": "dcaee8ee-f06f-4e35-86f9-3c0befb52960"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U213",
+                    "pos": {
+                        "x": 110.4,
+                        "y": 156.0
+                    },
+                    "uuid": "c778322a-863e-44bd-a7eb-4975f2a55679"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U210",
+                    "pos": {
+                        "x": 57.0,
+                        "y": 156.0
+                    },
+                    "uuid": "03a9c3a6-4dcf-4e3f-88b8-ea9b062a1084"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-48-1EP_7x7mm_P0.5mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U270",
+                    "pos": {
+                        "x": 208.0,
+                        "y": 38.0
+                    },
+                    "uuid": "76bf252e-765c-4238-b9e0-2f7492439b0b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'BGA-1024_12x9mm' does not match copy in library 'LightRail'",
+            "items": [
+                {
+                    "description": "Footprint U34",
+                    "pos": {
+                        "x": 96.0,
+                        "y": 103.0
+                    },
+                    "uuid": "b2b63572-a55c-4e90-8179-87099be43cdf"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-32-1EP_5x5mm_P0.5mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U51",
+                    "pos": {
+                        "x": 152.3,
+                        "y": 53.0
+                    },
+                    "uuid": "91a987ce-663d-46cb-b124-27c30c78b514"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U225",
+                    "pos": {
+                        "x": 110.4,
+                        "y": 165.0
+                    },
+                    "uuid": "36bc4ec7-f334-463e-b8ab-2d67279ffd07"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'SOT-23-5' does not match copy in library 'Package_TO_SOT_SMD'",
+            "items": [
+                {
+                    "description": "Footprint U240",
+                    "pos": {
+                        "x": 133.0,
+                        "y": 162.0
+                    },
+                    "uuid": "d655da2f-4d86-4d6c-ab1f-505cdd079271"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-48-1EP_7x7mm_P0.5mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U272",
+                    "pos": {
+                        "x": 228.0,
+                        "y": 38.0
+                    },
+                    "uuid": "3afcee05-87da-4c10-8c2a-6a2697125eda"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U214",
+                    "pos": {
+                        "x": 128.199999,
+                        "y": 156.0
+                    },
+                    "uuid": "17c9eb7d-01c9-4391-bb32-b5b02ce34c67"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'Custom_Optical_Module_25x8mm' does not match copy in library 'LightRail'",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 155.0,
+                        "y": 89.0
+                    },
+                    "uuid": "10820396-3395-4940-936f-726afa17e191"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U212",
+                    "pos": {
+                        "x": 92.6,
+                        "y": 156.0
+                    },
+                    "uuid": "cac700be-7b1e-4e67-acfb-9b53b0c8377e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'QFN-48-1EP_7x7mm_P0.5mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U250",
+                    "pos": {
+                        "x": 149.0,
+                        "y": 28.0
+                    },
+                    "uuid": "a06d2511-d76a-4585-9cee-a86ee176ccad"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'BGA-2500_40x40mm_P0.8mm' does not match copy in library 'LightRail'",
+            "items": [
+                {
+                    "description": "Footprint U4",
+                    "pos": {
+                        "x": 199.0,
+                        "y": 89.0
+                    },
+                    "uuid": "699b6fc4-8713-4cf7-bad8-525f6b6a856b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Footprint 'PQFN-40_5x6mm' does not match copy in library 'Package_DFN_QFN'",
+            "items": [
+                {
+                    "description": "Footprint U223",
+                    "pos": {
+                        "x": 74.8,
+                        "y": 165.0
+                    },
+                    "uuid": "d210342b-921e-40e9-a7a4-4d30bd22581a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        }
+    ]
+}

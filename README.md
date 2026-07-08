@@ -9,7 +9,7 @@ For the manufacturer's current request, use only:
 - `00_step01_gerber_bom_only/TFLN_AI_NODE_X2_STEP_01_GERBER_REVIEW.zip`
 - `00_step01_gerber_bom_only/TFLN_AI_NODE_X2_STEP_01_BOM.xlsx`
 
-Those are the focused Step 01 Gerber/BOM review files.
+Those are the controlled Step 01 Gerber/BOM review files. The Gerber zip has been refreshed from the post-cleanup KiCad export, and the BOM workbook has been updated to remove stale caution wording, old DRC counts, and old mechanical-reference wording.
 
 ## Other Folders
 
@@ -25,16 +25,18 @@ Those are the focused Step 01 Gerber/BOM review files.
 
 ## Engineering Status
 
-The latest KiCad check reports 0 DRC errors and 0 unconnected items after the regulator-placeholder geometry fix. Remaining warnings and schematic parity items are documented in `07_engineering_reconcile/ENGINEERING_FIX_SUMMARY.md`.
+Current validated status as of 2026-07-07:
+
+- The repo does not contain a complete design-source schematic or external netlist. The checked KiCad schematic is a connectivity stub: 2,311 lines, 28 wire objects, 82 schematic symbols, and 0 explicit net entries.
+- Non-netlist manufacturability cleanup has been applied in `07_engineering_reconcile/00_OPEN_IN_KICAD_PATCHED/`: 4-layer High-Tg FR4 review stackup, ENIG finish metadata, six board-only fiducials, project-local footprint libraries, and silkscreen cleanup.
+- The Step 01 BOM workbook now carries current review/signoff language and current validation counts instead of the earlier stale status wording.
+- `07_engineering_reconcile/after_non_netlist_fab_readiness_drc.json` reports 0 DRC errors, 0 unconnected items, 82 DRC warnings, and 214 schematic-parity warnings.
+- The 82 remaining DRC warnings are all `lib_footprint_mismatch`. The 214 schematic-parity warnings require a real schematic/netlist source and cannot be closed by file cleanup alone.
+
+Post-cleanup Gerber/drill engineering-review export:
+
+- `07_engineering_reconcile/TFLN_AI_NODE_X2_AFTER_NON_NETLIST_CLEANUP_GERBER_DRILL.zip`
 
 ## Fabrication Readiness
 
-All 82 netlisted components are placed on the PCB and the reconciled KiCad check
-reports 0 DRC errors / 0 unconnected items. The board is still an explicit
-**REFERENCE RECONSTRUCTION** with 214 schematic-parity warnings, so it is
-**not yet released for production fabrication**. The full, evidence-backed
-assessment, the exact bounded items required to reach a FAB-READY release, and
-the supporting manufacturing data (centroid/pick-and-place, drill report,
-placement map, corrected Gerber job file with revision + ENIG finish) are in
-`08_fab_release/`. See `08_fab_release/RELEASE_GATE_CHECKLIST.md` for the
-one-page go/no-go.
+The `08_fab_release/` package from the remote branch remains in the repo as the fabrication-readiness evidence package: placement audit, fab notes, drill/centroid data, decision log, and release gate. Treat it together with `07_engineering_reconcile/`: production approval still depends on complete schematic/netlist source, parity closure or signed waiver, BOM owner signoff, chassis/mechanical signoff, and manufacturer DFM/DFA closure.

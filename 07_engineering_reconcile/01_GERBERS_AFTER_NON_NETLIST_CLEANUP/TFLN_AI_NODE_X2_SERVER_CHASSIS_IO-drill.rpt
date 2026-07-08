@@ -1,0 +1,28 @@
+Drill report for TFLN_AI_NODE_X2_SERVER_CHASSIS_IO.kicad_pcb
+Created on 2026-07-07T21:47:23
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  EO_Bias_Monitor           front
+    L2 :  Electrical_GND            in1
+    L3 :  Electrical_Power          in2
+    L4 :  Slow_Control              back
+
+
+Drill file 'TFLN_AI_NODE_X2_SERVER_CHASSIS_IO.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.350mm  0.0138"  (180 holes))
+    T2  0.450mm  0.0177"  (44 holes))
+    T3  0.500mm  0.0197"  (16 holes))
+    T4  0.900mm  0.0354"  (8 holes))
+
+    Total plated holes count 248
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+    T5  3.200mm  0.1260"  (12 holes))
+
+    Total unplated holes count 12
