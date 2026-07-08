@@ -1,0 +1,11 @@
+Interface,Signals (from Rev 4.0 schematic),Multiplicity,Resolution status
+NCE-A/B ↔ TFLN PIC,"TFLN_TX_P0..3, TFLN_TX_N0..3 (U1,U4) → TX_P/N0..3 (U3)",8 diff pairs/NCE,defined (pins named; NCE→U3 wires shown)
+TFLN PIC → RF driver,"U3 TX ↔ HMC8410 (U50-53) RF_IN/OUT_P/N; BIAS, MON_PD",4 drivers,bus-level (MZM RF drive)
+TFLN PIC → optical,U3 OPT_TX0..3 (optical outputs),4 optical,defined (output pins)
+NCE ↔ HBM4,"HBM_DQ0..7, HBM_CK/CK_N/CATTRIP/REFCK (U1,U4) ↔ DQ/CK/... (U30-35,U40-45)",6 stacks/NCE,bus-level only (HBM bus) — per-stack pin map NOT resolved
+NCE ↔ PCIe/fabric,"PCIE_TX_P0..7 (U1,U4) ↔ PEX88096 (U270-273) UP/DN_TX",8 lanes/NCE,bus-level; pin map not resolved
+PEX switch ↔ slots,"PEX88096 UP/DN_TX ↔ PCIe_x16 (J20-23) TX/RX0..7, REFCLK_P/N, PERST_N",4 slots,bus-level
+Retimers,"BCM84881 (U260-263) UP/DN_TX0..3, REFCLK",4 retimers,present; net map not resolved
+Clocking,"Si5395A (U250,251) OUT0..7 → CLK_REF_100M / CLK_CORE_2G / CLK_NOC_1G",2 gens,named clock nets
+Management,AST2600 (U380) SPI/I2C/UART/USB ↔ subsystems,1 BMC,interface pins named
+Power rails,"VPD (ISL69260/99390/ADP7118) → VDD_CORE_0V8, VDD_IO_1V8, VDD_HBM_1V2, VDD_RF_0V9, +3V3 from +12V_IN",24-phase,rails named; phase→rail map NOT resolved
