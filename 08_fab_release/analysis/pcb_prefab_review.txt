@@ -1,0 +1,11 @@
+=== Review Summary [stage: pre_fab] ===
+
+--- assembly ---
+  [1] ERROR FD-001: No fiducials on F.Cu (569 SMD components) (finest pad dim 0.22mm — BGA/fine-pitch QFN present)
+      Rec: Add fiducial markers for pick-and-place alignment (3 per side with SMD).
+
+--- testability ---
+  [2] WARNING TE-001: Test point coverage: 0/380 nets (0%)
+      Rec: Add test points to improve ICT/flying probe coverage.
+
+Total: 2 (1 error, 1 warning)

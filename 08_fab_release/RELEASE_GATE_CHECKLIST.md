@@ -35,10 +35,13 @@ Status legend: ✅ met · ⚠️ conditional / documented · ⛔ blocking.
 | 16 | BOM status sheets current | ⛔ | workbook still shows pre-reconciliation numbers (Q-F) |
 | 17 | Placeholder populate/DNP resolved | ⛔ | pending Q-A sign-off |
 | 18 | Mounting-hole clearance (MH5) confirmed | ⛔ | pending Q-C mechanical sign-off |
+| 19 | Fiducials for pick-and-place | ⛔ | FD-001: none on F.Cu; fine-pitch BGA/QFN present (kicad-happy pre-fab) |
+| 20 | Test-point coverage | ⚠️ | TE-001: 0/380 nets; add for ICT / flying-probe bring-up |
 
 ## Overall gate
 
 **⛔ NOT RELEASED for production fabrication.** Placement and DRC-error gates are
 green and the fabrication-data package is documentation-complete, but items
-4, 6, 11, 12, 13, 16, 17, 18 are open. All are bounded engineering tasks — see
-`FAB_READINESS_ASSESSMENT.md` §5 for the ordered path to close them.
+4, 6, 11, 12, 13, 16, 17, 18, 19, 20 are open. All are bounded engineering tasks
+— see `FAB_READINESS_ASSESSMENT.md` §5 for the ordered path to close them, and
+`analysis/` for the automated pre-fab review (kicad-happy) behind items 19–20.
