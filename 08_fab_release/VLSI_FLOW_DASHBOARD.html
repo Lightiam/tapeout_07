@@ -1,0 +1,232 @@
+<title>TFLN_AI_NODE_X2 — VLSI / PCB Flow Status</title>
+<style>
+  :root{
+    --bg:#f4f7fa; --panel:#ffffff; --panel-2:#eef2f7; --ink:#141a22; --ink-2:#4a586a;
+    --line:#d5deea; --accent:#0fb3a6; --accent-ink:#0a8f85;
+    --done:#2f9e44; --warn:#c98a12; --crit:#dc4636;
+    --done-bg:#e6f4ea; --warn-bg:#faf0da; --crit-bg:#fbe7e3;
+    --mono:ui-monospace,"SF Mono","Cascadia Code","JetBrains Mono",Menlo,Consolas,monospace;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --shadow:0 1px 2px rgba(20,26,34,.06),0 8px 24px rgba(20,26,34,.06);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0b0f14; --panel:#121821; --panel-2:#0e141c; --ink:#e6edf5; --ink-2:#8fa1b5;
+      --line:#223042; --accent:#22d3c5; --accent-ink:#5ce6db;
+      --done:#3fb950; --warn:#e0a419; --crit:#f0503a;
+      --done-bg:#12251a; --warn-bg:#2a2110; --crit-bg:#2c1512;
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#f4f7fa; --panel:#ffffff; --panel-2:#eef2f7; --ink:#141a22; --ink-2:#4a586a;
+    --line:#d5deea; --accent:#0fb3a6; --accent-ink:#0a8f85;
+    --done:#2f9e44; --warn:#c98a12; --crit:#dc4636;
+    --done-bg:#e6f4ea; --warn-bg:#faf0da; --crit-bg:#fbe7e3;
+    --shadow:0 1px 2px rgba(20,26,34,.06),0 8px 24px rgba(20,26,34,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#0b0f14; --panel:#121821; --panel-2:#0e141c; --ink:#e6edf5; --ink-2:#8fa1b5;
+    --line:#223042; --accent:#22d3c5; --accent-ink:#5ce6db;
+    --done:#3fb950; --warn:#e0a419; --crit:#f0503a;
+    --done-bg:#12251a; --warn-bg:#2a2110; --crit-bg:#2c1512;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+    line-height:1.5;-webkit-font-smoothing:antialiased;
+    background-image:radial-gradient(circle at 1px 1px,var(--line) 1px,transparent 0);
+    background-size:26px 26px;}
+  .wrap{max-width:1120px;margin:0 auto;padding:40px 22px 72px}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent-ink);margin:0 0 8px}
+  h1{font-size:clamp(26px,4.2vw,40px);line-height:1.06;letter-spacing:-.02em;margin:0;text-wrap:balance;font-weight:680}
+  h1 .sub{display:block;font-family:var(--mono);font-size:14px;letter-spacing:.02em;color:var(--ink-2);font-weight:500;margin-top:10px}
+  .headrow{display:flex;flex-wrap:wrap;gap:20px;align-items:flex-end;justify-content:space-between}
+  .verdict{display:flex;gap:14px;align-items:center;background:var(--panel);border:1px solid var(--line);
+    border-radius:14px;padding:14px 18px;box-shadow:var(--shadow)}
+  .verdict .big{font-family:var(--mono);font-size:22px;font-weight:700;color:var(--crit);line-height:1}
+  .verdict .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+  .tally{display:flex;gap:8px;margin-top:8px}
+  .chip{font-family:var(--mono);font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;display:inline-flex;gap:6px;align-items:center}
+  .chip.d{color:var(--done);background:var(--done-bg)} .chip.w{color:var(--warn);background:var(--warn-bg)} .chip.c{color:var(--crit);background:var(--crit-bg)}
+  .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+  .dot.d{background:var(--done)} .dot.w{background:var(--warn)} .dot.c{background:var(--crit)}
+
+  section{margin-top:44px}
+  .h2{font-family:var(--mono);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);
+    margin:0 0 16px;display:flex;align-items:center;gap:12px}
+  .h2::after{content:"";flex:1;height:1px;background:var(--line)}
+
+  /* VLSI pipeline */
+  .pipe{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+  .stage{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:15px 15px 16px;
+    box-shadow:var(--shadow);position:relative;border-top:3px solid var(--sc)}
+  .stage .n{font-family:var(--mono);font-size:11px;color:var(--ink-2);letter-spacing:.08em}
+  .stage h3{margin:5px 0 2px;font-size:15px;letter-spacing:-.01em}
+  .stage .eq{font-family:var(--mono);font-size:11.5px;color:var(--ink-2);margin-bottom:10px}
+  .stage .st{font-family:var(--mono);font-size:12px;font-weight:700}
+  .stage .basis{font-size:12px;color:var(--ink-2);margin-top:6px;line-height:1.4}
+  .stage.d{--sc:var(--done)} .stage.w{--sc:var(--warn)} .stage.c{--sc:var(--crit)}
+  .stage.d .st{color:var(--done)} .stage.w .st{color:var(--warn)} .stage.c .st{color:var(--crit)}
+
+  /* Flow layout: wheel + detail */
+  .flow{display:grid;grid-template-columns:minmax(340px,460px) 1fr;gap:34px;align-items:start}
+  .wheelwrap{position:sticky;top:20px}
+  .wheel{position:relative;width:100%;aspect-ratio:1/1;max-width:460px;margin:0 auto}
+  .hub{position:absolute;inset:27%;border-radius:50%;background:var(--panel);border:1px solid var(--line);
+    box-shadow:var(--shadow);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:14px}
+  .hub .id{font-family:var(--mono);font-size:12px;color:var(--accent-ink);letter-spacing:.04em}
+  .hub .score{font-family:var(--mono);font-size:30px;font-weight:700;line-height:1;margin:6px 0 2px}
+  .hub .scl{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
+  .node{position:absolute;width:15%;aspect-ratio:1/1;transform:translate(-50%,-50%);
+    border-radius:50%;border:2px solid var(--nc);background:var(--panel);cursor:pointer;
+    display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);
+    transition:transform .16s ease, box-shadow .16s ease;padding:0}
+  .node:hover,.node:focus-visible{transform:translate(-50%,-50%) scale(1.13);outline:none;z-index:5}
+  .node .num{font-family:var(--mono);font-weight:700;font-size:clamp(13px,2.6vw,17px);color:var(--nc)}
+  .node .ring{position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--nc);opacity:0;transition:opacity .16s}
+  .node[aria-current="true"] .ring{opacity:.6}
+  .node.d{--nc:var(--done)} .node.w{--nc:var(--warn)} .node.c{--nc:var(--crit)}
+  .node.d{background:var(--done-bg)} .node.w{background:var(--warn-bg)} .node.c{background:var(--crit-bg)}
+  .spoke{position:absolute;height:1px;background:var(--line);transform-origin:left center;z-index:-1;opacity:.7}
+
+  /* detail cards */
+  .cards{display:flex;flex-direction:column;gap:10px}
+  .card{display:grid;grid-template-columns:40px 1fr auto;gap:14px;align-items:start;
+    background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--cc);
+    border-radius:11px;padding:13px 15px;box-shadow:var(--shadow);scroll-margin-top:20px;transition:border-color .16s,background .16s}
+  .card.hot{background:var(--panel-2)}
+  .card .idx{font-family:var(--mono);font-weight:700;font-size:16px;color:var(--cc);text-align:center;padding-top:1px}
+  .card h4{margin:0 0 3px;font-size:14.5px;letter-spacing:-.01em}
+  .card .m{font-family:var(--mono);font-size:12px;color:var(--ink-2);line-height:1.45}
+  .card .m b{color:var(--ink);font-weight:600}
+  .card .badge{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+    padding:4px 9px;border-radius:999px;white-space:nowrap;height:fit-content}
+  .card.d{--cc:var(--done)} .card.w{--cc:var(--warn)} .card.c{--cc:var(--crit)}
+  .card.d .badge{color:var(--done);background:var(--done-bg)} .card.w .badge{color:var(--warn);background:var(--warn-bg)} .card.c .badge{color:var(--crit);background:var(--crit-bg)}
+
+  .foot{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);
+    font-family:var(--mono);font-size:11.5px;color:var(--ink-2);line-height:1.6}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;color:var(--ink-2);margin-bottom:18px}
+  .legend span{display:inline-flex;gap:7px;align-items:center}
+  @media (max-width:860px){.flow{grid-template-columns:1fr}.wheelwrap{position:static}.pipe{grid-template-columns:repeat(2,1fr)}}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <div class="headrow">
+    <div>
+      <p class="eyebrow">VLSI → PCB Realization · Fab-Readiness Status</p>
+      <h1>TFLN_AI_NODE_X2 — Server Chassis I/O
+        <span class="sub">295.15 × 140.15 mm · 4-layer · KiCad 9.0.9 · 82 netlisted parts · dual-NCE + TFLN PIC + 12× HBM4</span>
+      </h1>
+    </div>
+    <div class="verdict">
+      <span class="dot c" style="width:12px;height:12px"></span>
+      <div>
+        <div class="lbl">Gate</div>
+        <div class="big">NOT FAB-READY</div>
+        <div class="tally">
+          <span class="chip d"><span class="dot d"></span>4 clear</span>
+          <span class="chip w"><span class="dot w"></span>3 warning</span>
+          <span class="chip c"><span class="dot c"></span>5 blocking</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <h2 class="h2">VLSI Design Flow · Idea → Silicon (mapped to this board)</h2>
+    <div class="pipe">
+      <div class="stage d"><div class="n">01</div><h3>Specification</h3><div class="eq">Board intent / envelope</div><div class="st">✔ DEFINED</div><div class="basis">295×140 mm, 4-layer, dual-NCE + TFLN PIC + HBM scope set</div></div>
+      <div class="stage c"><div class="n">02</div><h3>Front-End</h3><div class="eq">Schematic + netlist</div><div class="st">✖ BLOCKED</div><div class="basis">ERC 118 errors · ~0 nets captured vs 380 on PCB · 214 parity</div></div>
+      <div class="stage w"><div class="n">03</div><h3>Back-End</h3><div class="eq">Placement · routing · stackup</div><div class="st">◐ PARTIAL</div><div class="basis">82 placed ✓ · routing/planes ✖ · stackup ✖</div></div>
+      <div class="stage w"><div class="n">04</div><h3>Verification</h3><div class="eq">DRC · ERC · parity</div><div class="st">◐ MIXED</div><div class="basis">DRC 0 errors ✓ · ERC + parity ✖</div></div>
+      <div class="stage w"><div class="n">05</div><h3>Fabrication</h3><div class="eq">Gerber · DFM · DFA</div><div class="st">◐ PARTIAL</div><div class="basis">Gerbers generate ✓ · DFA ✖ · DFM held</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="h2">The 12-Step PCB Process · live status per step</h2>
+    <div class="legend">
+      <span><span class="dot d"></span>Clear — step complete &amp; tool-verified</span>
+      <span><span class="dot w"></span>Warning — usable, cleanup needed</span>
+      <span><span class="dot c"></span>Blocking — must close before release</span>
+      <span style="color:var(--accent-ink)">Click a node to jump to its detail →</span>
+    </div>
+    <div class="flow">
+      <div class="wheelwrap">
+        <div class="wheel" id="wheel">
+          <div class="hub">
+            <div class="id">TFLN_AI_NODE_X2</div>
+            <div class="score" style="color:var(--crit)">4<span style="color:var(--ink-2);font-size:18px">/12</span></div>
+            <div class="scl">steps clear</div>
+          </div>
+        </div>
+      </div>
+      <div class="cards" id="cards"></div>
+    </div>
+  </section>
+
+  <div class="foot">
+    Generated with KiCad 9.0.9 <span style="color:var(--ink-2)">kicad-cli</span> (DRC / ERC / netlist / Gerber / centroid) and the
+    vendored kicad-happy pre-fab analyzer, run against
+    07_engineering_reconcile/…/TFLN_AI_NODE_X2_SERVER_CHASSIS_IO.kicad_pcb. Every status is backed by a tool run —
+    evidence in 08_fab_release/analysis/ &amp; fab_data_kicad9/. Board is a reference reconstruction: back end is real,
+    front end (schematic → netlist → constrained routing) is open.
+  </div>
+</div>
+
+<script>
+const steps=[
+ {n:1,s:"c",t:"Schematic Creation / Validation",m:"<b>kicad-cli sch erc</b>: 177 violations — 112 pin-not-connected + 6 wire-dangling (errors)"},
+ {n:2,s:"d",t:"BOM",m:"13 grouped lines · <b>82 placements · 0 missing MPN</b> (status sheets stale — Q-F)"},
+ {n:3,s:"w",t:"Footprint Creation / Validation",m:"82 <b>lib_footprint</b> warnings · custom LightRail library not configured"},
+ {n:4,s:"c",t:"Netlist",m:"schematic exports <b>~0 nets</b> · PCB carries <b>380 nets</b> → 214 parity warnings"},
+ {n:5,s:"d",t:"Board Outline / Mechanical",m:"outline <b>295.15 × 140.15 mm</b> · <b>12 mounting holes</b> (M3, NPTH 3.2 mm)"},
+ {n:6,s:"c",t:"Stackup / Constraints",m:"<b>no stackup block</b> · surface finish = <b>NONE</b> · no impedance targets"},
+ {n:7,s:"d",t:"Component Placement",m:"<b>82 / 82 placed</b> (top side) · verified via kicad-cli pcb export pos"},
+ {n:8,s:"c",t:"Routing and Planes",m:"<b>0 vias · 0 copper zones</b> (no power/GND planes) · tracks top layer only"},
+ {n:9,s:"w",t:"Silkscreen / DRC / Fab Notes",m:"<b>kicad-cli pcb drc</b>: 0 errors / 84 warnings · 2 silk-over-copper · fab notes added"},
+ {n:10,s:"d",t:"Gerber Generation",m:"full <b>28-file</b> Gerber + drill set regenerates cleanly (fab_data_kicad9/)"},
+ {n:11,s:"c",t:"DFA",m:"<b>FD-001</b> no fiducials (fine-pitch BGA/QFN) · <b>TE-001</b> 0/380 test points"},
+ {n:12,s:"w",t:"DFM",m:"0 DRC errors, but parity + stackup + finish open → <b>not releasable</b>"},
+];
+const wheel=document.getElementById('wheel');
+const cards=document.getElementById('cards');
+const N=steps.length;
+steps.forEach((st,i)=>{
+  // detail card
+  const c=document.createElement('div');
+  c.className='card '+st.s; c.id='step-'+st.n;
+  c.innerHTML=`<div class="idx">${st.n}</div><div><h4>${st.t}</h4><div class="m">${st.m}</div></div>
+    <div class="badge">${st.s==='d'?'Clear':st.s==='w'?'Warning':'Blocking'}</div>`;
+  cards.appendChild(c);
+  // wheel node — start at top (-90deg), go clockwise
+  const ang=(-90 + i*(360/N))*Math.PI/180;
+  const R=42; // percent radius
+  const cx=50+R*Math.cos(ang), cy=50+R*Math.sin(ang);
+  const node=document.createElement('button');
+  node.className='node '+st.s; node.style.left=cx+'%'; node.style.top=cy+'%';
+  node.setAttribute('aria-label',`Step ${st.n}: ${st.t}`);
+  node.innerHTML=`<span class="ring"></span><span class="num">${st.n}</span>`;
+  // spoke
+  const spoke=document.createElement('div');
+  spoke.className='spoke';
+  const len=R-9; // stop short of node
+  spoke.style.left='50%'; spoke.style.top='50%';
+  spoke.style.width=len+'%';
+  spoke.style.transform=`rotate(${ang}rad)`;
+  wheel.appendChild(spoke);
+  const focus=()=>{
+    document.querySelectorAll('.node').forEach(x=>x.setAttribute('aria-current','false'));
+    node.setAttribute('aria-current','true');
+    document.querySelectorAll('.card').forEach(x=>x.classList.remove('hot'));
+    c.classList.add('hot');
+    c.scrollIntoView({behavior:'smooth',block:'nearest'});
+  };
+  node.addEventListener('click',focus);
+  wheel.appendChild(node);
+});
+</script>
