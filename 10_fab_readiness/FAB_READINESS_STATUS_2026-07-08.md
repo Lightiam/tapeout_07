@@ -100,5 +100,8 @@ The next required deliverable is the authoritative design-source package:
 - rail/lane/clock/reset allocation tables,
 - corrected RF-front-end MPN and datasheet.
 
+Paste-ready requests for these missing items are in
+`10_fab_readiness/MISSING_DATA_RISK_AND_REQUEST_PROMPTS.md`.
+
 Once those are supplied, the board can move from engineering scaffold to
 fab-ready release work.
