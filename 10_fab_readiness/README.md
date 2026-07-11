@@ -14,3 +14,9 @@ The package can move toward final fab release after the authoritative NCE ball
 map, HBM4 ball/channel map, TFLN pad map, rail/lane/clock/reset allocation, RF
 front-end correction, and BOM/AVL verification are complete.
 
+See [`../11_production_fab_roadmap/`](../11_production_fab_roadmap/README.md)
+for the active sourcing decisions (HBM3E substitute pending real HBM4
+allocation, HyperLight as TFLN target) and the ready-to-run agent prompt that
+locks the `TFLN_AI_NODE_X2_REFERENCE` layout and closes these gaps without
+inventing the NCE ASIC's proprietary ball map.
+

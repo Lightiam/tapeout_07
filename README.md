@@ -20,7 +20,10 @@ Those are the controlled Step 01 Gerber/BOM review files. The Gerber zip has bee
 - `05_manufacturer_messages`: sendable manufacturer messages and clarification questions.
 - `06_engineering_notes`: ECO candidate traceability evidence.
 - `07_engineering_reconcile`: latest patched KiCad source and KiCad validation delta.
-- `08_fab_release`: fabrication-readiness package — placement audit, fab notes, drill/centroid data, decision log, and release gate. **Start here for fab status.**
+- `08_fab_release`: fabrication-readiness package — placement audit, fab notes, drill/centroid data, decision log, and release gate.
+- `09_pin_complete_data`: pin-data resolution matrix, datasheet manifest, and the engineering data request for the missing NCE/HBM4/TFLN pin maps.
+- `10_fab_readiness`: current fab-readiness control point and release-gate verdict. **Start here for fab status.**
+- `11_production_fab_roadmap`: real-world sourcing decisions (HBM3E substitute, HyperLight TFLN target) and the locked-layout agent prompt for closing the remaining gaps. **Start here for the active work plan.**
 - `99_generation_scripts`: scripts used to generate/assemble these artifacts.
 
 ## Engineering Status
