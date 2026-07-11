@@ -1822,6 +1822,7 @@
     (property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm" (id 2) (at 230.00 310.00 0) (effects (font (size 1.27 1.27)) hide))
     (property "MPN" "HMC8410LP2FE" (id 5) (at 230.00 310.00 0) (effects (font (size 1.27 1.27)) hide))
     (property "Description" "ADI 100GHz Differential RF Driver IC" (id 6) (at 230.00 310.00 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Substitute_Recommendation" "MISMATCH-CONFIRMED: real HMC8410LP2FE is a 0.01-10GHz LNA in a 6-lead 2mm x 2mm LFCSP (analog.com/en/products/hmc8410lp2fe.html), NOT a 100GHz driver in QFN-32 5x5mm as labeled here. Recommended real replacement for TFLN driver/modulator-interface function: Renesas HXT45430, 112Gb/s PAM4 Silicon Photonic Modulator Driver (renesas.com/en/products/hxt45430). Package/footprint co-design with HXT45430 still PENDING - current QFN-32-1EP_5x5mm_P0.5mm footprint is NOT verified to match HXT45430 and has NOT been changed in this pass (placement/footprint locked pending owner review). SUBSTITUTE-PENDING-OWNER-SIGNOFF." (id 7) (at 230.00 310.00 0) (effects (font (size 1.0 1.0)) hide))
   )
 
   (symbol (lib_id "HMC8410") (at 245.00 310.00 0) (uuid "91a987ce-663d-46cb-b124-27c30c78b514")
@@ -1830,6 +1831,7 @@
     (property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm" (id 2) (at 245.00 310.00 0) (effects (font (size 1.27 1.27)) hide))
     (property "MPN" "HMC8410LP2FE" (id 5) (at 245.00 310.00 0) (effects (font (size 1.27 1.27)) hide))
     (property "Description" "ADI 100GHz Differential RF Driver IC" (id 6) (at 245.00 310.00 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Substitute_Recommendation" "MISMATCH-CONFIRMED: real HMC8410LP2FE is a 0.01-10GHz LNA in a 6-lead 2mm x 2mm LFCSP (analog.com/en/products/hmc8410lp2fe.html), NOT a 100GHz driver in QFN-32 5x5mm as labeled here. Recommended real replacement for TFLN driver/modulator-interface function: Renesas HXT45430, 112Gb/s PAM4 Silicon Photonic Modulator Driver (renesas.com/en/products/hxt45430). Package/footprint co-design with HXT45430 still PENDING - current QFN-32-1EP_5x5mm_P0.5mm footprint is NOT verified to match HXT45430 and has NOT been changed in this pass (placement/footprint locked pending owner review). SUBSTITUTE-PENDING-OWNER-SIGNOFF." (id 7) (at 245.00 310.00 0) (effects (font (size 1.0 1.0)) hide))
   )
 
   (symbol (lib_id "HMC8410") (at 260.00 310.00 0) (uuid "52210734-0a81-4fea-afe2-c96d6b44948f")
@@ -1838,6 +1840,7 @@
     (property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm" (id 2) (at 260.00 310.00 0) (effects (font (size 1.27 1.27)) hide))
     (property "MPN" "HMC8410LP2FE" (id 5) (at 260.00 310.00 0) (effects (font (size 1.27 1.27)) hide))
     (property "Description" "ADI 100GHz Differential RF Driver IC" (id 6) (at 260.00 310.00 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Substitute_Recommendation" "MISMATCH-CONFIRMED: real HMC8410LP2FE is a 0.01-10GHz LNA in a 6-lead 2mm x 2mm LFCSP (analog.com/en/products/hmc8410lp2fe.html), NOT a 100GHz driver in QFN-32 5x5mm as labeled here. Recommended real replacement for TFLN driver/modulator-interface function: Renesas HXT45430, 112Gb/s PAM4 Silicon Photonic Modulator Driver (renesas.com/en/products/hxt45430). Package/footprint co-design with HXT45430 still PENDING - current QFN-32-1EP_5x5mm_P0.5mm footprint is NOT verified to match HXT45430 and has NOT been changed in this pass (placement/footprint locked pending owner review). SUBSTITUTE-PENDING-OWNER-SIGNOFF." (id 7) (at 260.00 310.00 0) (effects (font (size 1.0 1.0)) hide))
   )
 
   (symbol (lib_id "HMC8410") (at 275.00 310.00 0) (uuid "14459985-6362-4336-93bc-1460cdd12d20")
@@ -1846,6 +1849,7 @@
     (property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm" (id 2) (at 275.00 310.00 0) (effects (font (size 1.27 1.27)) hide))
     (property "MPN" "HMC8410LP2FE" (id 5) (at 275.00 310.00 0) (effects (font (size 1.27 1.27)) hide))
     (property "Description" "ADI 100GHz Differential RF Driver IC" (id 6) (at 275.00 310.00 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Substitute_Recommendation" "MISMATCH-CONFIRMED: real HMC8410LP2FE is a 0.01-10GHz LNA in a 6-lead 2mm x 2mm LFCSP (analog.com/en/products/hmc8410lp2fe.html), NOT a 100GHz driver in QFN-32 5x5mm as labeled here. Recommended real replacement for TFLN driver/modulator-interface function: Renesas HXT45430, 112Gb/s PAM4 Silicon Photonic Modulator Driver (renesas.com/en/products/hxt45430). Package/footprint co-design with HXT45430 still PENDING - current QFN-32-1EP_5x5mm_P0.5mm footprint is NOT verified to match HXT45430 and has NOT been changed in this pass (placement/footprint locked pending owner review). SUBSTITUTE-PENDING-OWNER-SIGNOFF." (id 7) (at 275.00 310.00 0) (effects (font (size 1.0 1.0)) hide))
   )
 
   (wire (pts (xy 260.00 275.00) (xy 230.00 295.00)))
