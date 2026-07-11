@@ -100,4 +100,51 @@ would a custom-PCB footprint swap (Section 5) be worth the deviation-approval pr
 **No action will be taken on this option without your explicit go-ahead.**
 
 ---
+
+## 8. Decision recorded (2026-07-10)
+
+Owner selected: **Devkit-first, no PCB change.** Approved scope is limited to bringing up HBM/PCIe/firmware concepts on an off-the-shelf devkit. No footprint deviation, no change to the locked reference layout, no change to the NCE ball map status.
+
+### Recommended kit
+
+AMD Versal HBM Series VHK158 Evaluation Kit (part number EK-VHK158-G), built around the VH1582 device: 32GB HBM, 112G PAM4 transceivers, PCIe Gen5x8/x16, dual QSFP-DD plus quad QSFP28, 32GB DDR4. List price 14,995 USD, 16-26 week lead time depending on distributor. [AMD VHK158 product page](https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/vhk158.html), [product brief PDF](https://www.amd.com/content/dam/amd/en/documents/products/adaptive-socs-and-fpgas/boards-kits/product-briefs/2504082-vhk158-product-brief.pdf). Alternative: Intel Agilex 7 FPGA M-Series Development Kit, HBM2e Edition (AGM039, 4700A BGA package) if the Intel/Quartus toolchain is preferred over AMD Vivado/Vitis. [Intel product page](https://www.intel.com/content/www/us/en/products/details/fpga/development-kits/agilex/agm039.html).
+
+### Bring-up plan (zero PCB impact)
+
+1. Order the kit; while in transit, review the VHK158 example designs/tutorials and the board's BEAM system-controller tool.
+2. Validate HBM bring-up: run the vendor reference design exercising the full 32GB HBM stack, capture bandwidth/latency numbers as a real-silicon reference point against LightRail's target memory bandwidth.
+3. Validate PCIe: bring up the Gen5 x8/x16 edge-connector link to a host, confirm enumeration and sustained throughput.
+4. If useful, prototype firmware/driver concepts that would eventually run against the real NCE, using the devkit as a stand-in compute target.
+5. Document results in this repo (new subfolder under `13_path_b_fpga_option/`) with real captured numbers, not projections — same honest-reporting standard as the ERC/DRC baselines already committed.
+6. Report findings back before any decision on whether a PCB-level footprint swap (Section 5) is worth pursuing. The locked reference layout stays untouched throughout this step.
+
+### 8b. RISC-V architecture validation on FPGA fabric (added per owner input)
+
+Owner confirmed the NCE core is RISC-V based, and pointed to two references: Etched's
+approach of validating chip behavior on **massive FPGA clusters before silicon comes
+back**, and a many-core RISC-V cluster project (bitluni's 8,192-MCU build) as an
+architecture pattern. See `11_production_fab_roadmap/NCE_RISCV_CORE_IP_OPTIONS.md` for
+the real core-IP options this points to (Tenstorrent TT-Ascalon/Tensix Neo, Esperanto
+ET-SoC-1 pattern, SiFive Intelligence).
+
+This step stays entirely within Path B's zero-PCB-impact scope: it uses the *programmable
+logic fabric* of the same devkit(s) recommended above (Versal HBM VHK158 or Agilex M-Series),
+not the hardened Arm/host processor, to synthesize an open RISC-V soft-core array and
+validate the many-core architecture pattern before committing to any real RTL/tapeout
+under Path A.
+
+Real, citable prior art for this kind of FPGA-based many-core RISC-V validation:
+- **GRVI Phalanx** — up to 400 RV32I RISC-V soft cores on a single Kintex UltraScale FPGA. [arXiv:1606.01037](https://arxiv.org/pdf/1606.01037.pdf)
+- **HERO** (ETH Zurich) — FPGA research platform combining clusters of RISC-V soft cores with a hard ARM host processor, silicon-proven and fully reconfigurable. [HERO paper](https://iis-people.ee.ethz.ch/~andkurt/publications/carrv-hero.pdf)
+- **HammerBlade** — fully open-source RISC-V manycore architecture, silicon-validated at 2,048 cores (14/16nm ASIC), with an FPGA emulation path. [Cornell HammerBlade paper](https://www.csl.cornell.edu/~zhiruz/pdfs/hammerblade-isca2024.pdf)
+- **EMiX** — distributed emulation of multi-core RISC-V designs across *multiple interconnected FPGAs* when a design exceeds one board's capacity, directly mirroring Etched's "massive FPGA clusters" validation approach. [arXiv:2604.27012](https://arxiv.org/pdf/2604.27012v1.pdf)
+
+**Suggested addition to the bring-up plan:** after single-board HBM/PCIe validation
+(steps 1-4 above), if a many-core RISC-V pattern is the chosen direction, scale to
+multiple networked devkits (2+ Versal/Agilex boards) using an EMiX/HERO-style
+multi-FPGA partitioning approach to emulate the eventual NCE core count at real scale —
+same philosophy as Etched's pre-silicon FPGA cluster validation, still zero impact on
+the locked PCB since this all runs on off-the-shelf boards, not the reference layout.
+
+---
 *Prepared as a documented option per request. Sources cited inline above.*
