@@ -1,0 +1,48 @@
+{
+  "board": {
+    "3dviewports": [],
+    "design_settings": {
+      "defaults": {
+        "board_outline_line_width": 0.05,
+        "copper_line_width": 0.2,
+        "copper_text_size_h": 1.5,
+        "copper_text_size_v": 1.5
+      },
+      "rules": {
+        "min_clearance": 0.1,
+        "min_track_width": 0.1,
+        "min_via_annular_width": 0.1,
+        "min_via_diameter": 0.3
+      }
+    },
+    "layer_presets": []
+  },
+  "boards": [],
+  "cvpcb": {},
+  "erc": {},
+  "libraries": {
+    "pinned_footprint_libs": [],
+    "pinned_symbol_libs": []
+  },
+  "meta": {
+    "filename": "LR_P3A_Rev6_3.kicad_pro",
+    "version": 1
+  },
+  "net_settings": {},
+  "pcbnew": {
+    "last_paths": {
+      "gencad": "",
+      "idf": "",
+      "netlist": "",
+      "specctra_dsn": "",
+      "step": "",
+      "vrml": ""
+    }
+  },
+  "schematic": {
+    "legacy_lib_dir": "",
+    "legacy_lib_list": []
+  },
+  "sheets": [],
+  "text_variables": {}
+}
