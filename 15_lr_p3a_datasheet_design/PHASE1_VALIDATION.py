@@ -5,7 +5,7 @@ import json
 
 def main():
     print("==============================================================")
-    print("RUNNING PHASE 1 ROUTING VALIDATION")
+    print("RUNNING PHASE 1 ROUTING VALIDATION (KiCad 10.0)")
     print("==============================================================")
 
     # Resolve paths
@@ -23,18 +23,7 @@ def main():
     with open(pcb_file, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # 1. Parse Nets from PCB file
-    net_map = {}
-    net_name_to_id = {}
-    net_pattern = re.compile(r'\(net\s+(\d+)\s+"([^"]*)"\)')
-    for match in net_pattern.finditer(content):
-        net_id = int(match.group(1))
-        net_name = match.group(2)
-        net_map[net_id] = net_name
-        if net_name:
-            net_name_to_id[net_name] = net_id
-
-    # Nets we are checking for Phase 1
+    # Phase 1 nets to check
     phase1_nets = [
         "SERDES_200G_A",
         "SERDES_200G_B",
@@ -44,20 +33,24 @@ def main():
         "TFLN_RF_B"
     ]
 
-    print("\n[Net Classes & Mappings]")
+    # 1. Check if Net names are declared in pads (footprints)
+    pad_net_pattern = re.compile(r'\(pad\s+.*?\(net\s+"([^"]+)"\)', re.DOTALL)
+    declared_nets = set(pad_net_pattern.findall(content))
+
+    print("\n[Net Mappings]")
     for name in phase1_nets:
-        if name in net_name_to_id:
-            print(f"  [OK] Net {name:16} -> ID: {net_name_to_id[name]}")
+        if name in declared_nets:
+            print(f"  [OK] Net {name:16} -> Present on pads")
         else:
-            print(f"  [WARN] Net {name:16} is not declared in PCB file")
+            print(f"  [WARN] Net {name:16} -> No pad connections found")
 
     # 2. Check plane pours (Zones)
+    # E.g. (zone (net "GND") (layer "In7.Cu") ...
     zones = []
-    zone_pattern = re.compile(r'\(zone\s+.*?\(net\s+(\d+)\).*?\(layer\s+"([^"]+)"\)', re.DOTALL)
+    zone_pattern = re.compile(r'\(zone\s+.*?\(net\s+"([^"]+)"\).*?\(layer\s+"([^"]+)"\)', re.DOTALL)
     for match in zone_pattern.finditer(content):
-        net_id = int(match.group(1))
+        net_name = match.group(1)
         layer = match.group(2)
-        net_name = net_map.get(net_id, "")
         zones.append((net_name, layer))
 
     print("\n[Zone Pours]")
@@ -81,19 +74,20 @@ def main():
         print("  [FAIL] PWR_CORE plane (L13 / In12.Cu) missing.")
 
     # 3. Check segment properties (tracks)
+    # E.g. (segment (start ...) (end ...) (width 0.09) (layer "In12.Cu") (net "NetName"))
     segments = []
     segment_pattern = re.compile(
-        r'\(segment\s+.*?\(width\s+([\d\.]+)\).*?\(layer\s+"([^"]+)"\).*?\(net\s+(\d+)\)'
+        r'\(segment\s+.*?\(width\s+([\d\.]+)\).*?\(layer\s+"([^"]+)"\).*?\(net\s+"([^"]+)"\)',
+        re.DOTALL
     )
     for match in segment_pattern.finditer(content):
         width = float(match.group(1))
         layer = match.group(2)
-        net_id = int(match.group(3))
-        segments.append((width, layer, net_id))
+        net_name = match.group(3)
+        segments.append((width, layer, net_name))
 
     net_segments = {name: [] for name in phase1_nets}
-    for width, layer, net_id in segments:
-        net_name = net_map.get(net_id, "")
+    for width, layer, net_name in segments:
         if net_name in net_segments:
             net_segments[net_name].append((width, layer))
 
