@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "version": "1.1",
+    "projectName": "lightrail-tapeout-07",
+    "created": "2026-07-13T07:20:00Z",
+    "lastUpdated": "2026-07-13T07:20:00Z",
+    "stage": "complete"
+  },
+  "project": {
+    "name": "LightRail Tapeout 07",
+    "description": "High-speed optoelectronic transceiver prototype and 16-layer BGA processor board",
+    "version": "1.0.0",
+    "targetUse": "production",
+    "quantity": 10
+  },
+  "power": {
+    "input": {
+      "type": "barrel",
+      "voltage": {
+        "min": 4.5,
+        "max": 12.0
+      }
+    },
+    "rails": [
+      {
+        "name": "VCC_3V3",
+        "voltage": 3.3,
+        "currentMa": 1500,
+        "source": "regulator"
+      },
+      {
+        "name": "VCC_1V8",
+        "voltage": 1.8,
+        "currentMa": 1000,
+        "source": "regulator"
+      },
+      {
+        "name": "VCC_0V8_CORE",
+        "voltage": 0.8,
+        "currentMa": 8000,
+        "source": "regulator"
+      }
+    ]
+  },
+  "mcu": {
+    "required": true,
+    "selected": null,
+    "requirements": {
+      "gpio": 40,
+      "flash": ">=1MB"
+    }
+  },
+  "connectivity": {
+    "wireless": [],
+    "wired": ["USB", "Ethernet"],
+    "debug": ["SWD", "JTAG"]
+  },
+  "board": {
+    "layers": 16,
+    "size": {
+      "widthMm": 295.0,
+      "heightMm": 140.0,
+      "maxWidthMm": 300.0,
+      "maxHeightMm": 150.0,
+      "shape": "rectangle"
+    },
+    "thickness": 2.4
+  },
+  "stackupDecision": {
+    "layers": 16,
+    "rationale": "16-layer stackup required to accommodate dense fanout routing of custom 2500-pin BGAs and impedance control on RF nets",
+    "impedanceControlRequired": true,
+    "highSpeedSignals": ["USB", "PCIe"]
+  },
+  "thermal": {
+    "estimatedTotalWatts": 15.0,
+    "hotComponents": [
+      {
+        "role": "processor-bga",
+        "watts": 6.0
+      }
+    ],
+    "coolingStrategy": "heatsink",
+    "ambientTempMax": 45
+  },
+  "dfmTargets": {
+    "manufacturer": "other",
+    "assemblyMethod": "turnkey",
+    "budgetTier": "production",
+    "finePitchComponents": true
+  },
+  "components": {
+    "selected": [
+      {
+        "role": "tfln-modulator",
+        "mpn": "TFLN-MZM-400G-C",
+        "footprint": "TFLN_MZM_15mm",
+        "quantity": 1
+      },
+      {
+        "role": "laser-diode",
+        "mpn": "TLN-1550-100",
+        "footprint": "DFB_Laser_TO_Can",
+        "quantity": 1
+      },
+      {
+        "role": "photodetector",
+        "mpn": "XPDV4120R",
+        "footprint": "Finisar_XPDV4120R",
+        "quantity": 1
+      },
+      {
+        "role": "rf-driver-amp",
+        "mpn": "HMC8410",
+        "footprint": "QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm",
+        "quantity": 1
+      }
+    ],
+    "pending": []
+  }
+}
