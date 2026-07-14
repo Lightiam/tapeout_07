@@ -133,7 +133,12 @@ def main():
             with open(drc_file, "r", encoding="utf-8") as f:
                 drc_data = json.load(f)
             violations = drc_data.get("violations", [])
-            drc_errors = len(violations)
+            for v in violations:
+                severity = v.get("severity", "error").lower()
+                if severity == "warning":
+                    drc_warnings += 1
+                else:
+                    drc_errors += 1
         except Exception:
             pass
 
