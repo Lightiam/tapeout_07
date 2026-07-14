@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10.0 -10.0 315.0 160.0" width="1260.0" height="640.0" style="background-color: #121214;">
+  <!-- Board Outline -->
+  <line x1="0.0" y1="0.0" x2="295.0" y2="0.0" stroke="#2d8cf0" stroke-width="1.0" stroke-linecap="round" />
+  <line x1="295.0" y1="0.0" x2="295.0" y2="140.0" stroke="#2d8cf0" stroke-width="1.0" stroke-linecap="round" />
+  <line x1="295.0" y1="140.0" x2="0.0" y2="140.0" stroke="#2d8cf0" stroke-width="1.0" stroke-linecap="round" />
+  <line x1="0.0" y1="140.0" x2="0.0" y2="0.0" stroke="#2d8cf0" stroke-width="1.0" stroke-linecap="round" />
+  <!-- Component Placements (Top Layer) -->
+  <g transform="translate(75.0,55.0) rotate(0.0)">
+    <rect x="-20.0" y="-20.0" width="40" height="40" fill="none" stroke="#19be6b" stroke-width="0.4" rx="0.5" />
+    <circle cx="-19.0" cy="-19.0" r="0.4" fill="#19be6b" />
+  </g>
+  <text x="75.0" y="56.0" font-family="monospace" font-size="2.2" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">U101</text>
+  <g transform="translate(220.0,55.0) rotate(0.0)">
+    <rect x="-20.0" y="-20.0" width="40" height="40" fill="none" stroke="#19be6b" stroke-width="0.4" rx="0.5" />
+    <circle cx="-19.0" cy="-19.0" r="0.4" fill="#19be6b" />
+  </g>
+  <text x="220.0" y="56.0" font-family="monospace" font-size="2.2" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">U201</text>
+  <g transform="translate(75.0,115.0) rotate(0.0)">
+    <rect x="-7.5" y="-7.5" width="15" height="15" fill="none" stroke="#19be6b" stroke-width="0.4" rx="0.5" />
+    <circle cx="-6.5" cy="-6.5" r="0.4" fill="#19be6b" />
+  </g>
+  <text x="75.0" y="116.0" font-family="monospace" font-size="2.2" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">U102</text>
+  <g transform="translate(220.0,115.0) rotate(0.0)">
+    <rect x="-7.5" y="-7.5" width="15" height="15" fill="none" stroke="#19be6b" stroke-width="0.4" rx="0.5" />
+    <circle cx="-6.5" cy="-6.5" r="0.4" fill="#19be6b" />
+  </g>
+  <text x="220.0" y="116.0" font-family="monospace" font-size="2.2" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">U202</text>
+  <g transform="translate(5.0,5.0) rotate(0.0)">
+    <circle cx="0" cy="0" r="1.5" fill="none" stroke="#e0e0e0" stroke-width="0.3" />
+    <line x1="-2" y1="0" x2="2" y2="0" stroke="#e0e0e0" stroke-width="0.2" />
+    <line x1="0" y1="-2" x2="0" y2="2" stroke="#e0e0e0" stroke-width="0.2" />
+  </g>
+  <text x="5.0" y="6.0" font-family="monospace" font-size="2.2" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">FID1</text>
+  <g transform="translate(290.0,5.0) rotate(0.0)">
+    <circle cx="0" cy="0" r="1.5" fill="none" stroke="#e0e0e0" stroke-width="0.3" />
+    <line x1="-2" y1="0" x2="2" y2="0" stroke="#e0e0e0" stroke-width="0.2" />
+    <line x1="0" y1="-2" x2="0" y2="2" stroke="#e0e0e0" stroke-width="0.2" />
+  </g>
+  <text x="290.0" y="6.0" font-family="monospace" font-size="2.2" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">FID2</text>
+  <g transform="translate(147.5,135.0) rotate(0.0)">
+    <circle cx="0" cy="0" r="1.5" fill="none" stroke="#e0e0e0" stroke-width="0.3" />
+    <line x1="-2" y1="0" x2="2" y2="0" stroke="#e0e0e0" stroke-width="0.2" />
+    <line x1="0" y1="-2" x2="0" y2="2" stroke="#e0e0e0" stroke-width="0.2" />
+  </g>
+  <text x="147.5" y="136.0" font-family="monospace" font-size="2.2" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">FID3</text>
+  <g transform="translate(50.0,30.0) rotate(0.0)">
+    <circle cx="0" cy="0" r="3.0" fill="none" stroke="#ff9900" stroke-width="0.5" />
+  </g>
+  <text x="50.0" y="31.0" font-family="monospace" font-size="2.2" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">MH1A</text>
+  <g transform="translate(100.0,30.0) rotate(0.0)">
+    <circle cx="0" cy="0" r="3.0" fill="none" stroke="#ff9900" stroke-width="0.5" />
+  </g>
+  <text x="100.0" y="31.0" font-family="monospace" font-size="2.2" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">MH1B</text>
+  <g transform="translate(100.0,80.0) rotate(0.0)">
+    <circle cx="0" cy="0" r="3.0" fill="none" stroke="#ff9900" stroke-width="0.5" />
+  </g>
+  <text x="100.0" y="81.0" font-family="monospace" font-size="2.2" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">MH1C</text>
+  <g transform="translate(50.0,80.0) rotate(0.0)">
+    <circle cx="0" cy="0" r="3.0" fill="none" stroke="#ff9900" stroke-width="0.5" />
+  </g>
+  <text x="50.0" y="81.0" font-family="monospace" font-size="2.2" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">MH1D</text>
+  <g transform="translate(195.0,30.0) rotate(0.0)">
+    <circle cx="0" cy="0" r="3.0" fill="none" stroke="#ff9900" stroke-width="0.5" />
+  </g>
+  <text x="195.0" y="31.0" font-family="monospace" font-size="2.2" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">MH2A</text>
+  <g transform="translate(245.0,30.0) rotate(0.0)">
+    <circle cx="0" cy="0" r="3.0" fill="none" stroke="#ff9900" stroke-width="0.5" />
+  </g>
+  <text x="245.0" y="31.0" font-family="monospace" font-size="2.2" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">MH2B</text>
+  <g transform="translate(245.0,80.0) rotate(0.0)">
+    <circle cx="0" cy="0" r="3.0" fill="none" stroke="#ff9900" stroke-width="0.5" />
+  </g>
+  <text x="245.0" y="81.0" font-family="monospace" font-size="2.2" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">MH2C</text>
+  <g transform="translate(195.0,80.0) rotate(0.0)">
+    <circle cx="0" cy="0" r="3.0" fill="none" stroke="#ff9900" stroke-width="0.5" />
+  </g>
+  <text x="195.0" y="81.0" font-family="monospace" font-size="2.2" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">MH2D</text>
+  <text x="147.5" y="145.0" font-family="sans-serif" font-size="4" font-weight="bold" fill="#2d8cf0" text-anchor="middle">LR-P3A Rev 6.3 — Assembly Drawing (Top Layer)</text>
+</svg>

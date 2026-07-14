@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10.0 -10.0 315.0 160.0" width="1260.0" height="640.0" style="background-color: #121214;">
+  <!-- Board Outline -->
+  <line x1="0.0" y1="0.0" x2="295.0" y2="0.0" stroke="#2d8cf0" stroke-width="1.0" stroke-linecap="round" />
+  <line x1="295.0" y1="0.0" x2="295.0" y2="140.0" stroke="#2d8cf0" stroke-width="1.0" stroke-linecap="round" />
+  <line x1="295.0" y1="140.0" x2="0.0" y2="140.0" stroke="#2d8cf0" stroke-width="1.0" stroke-linecap="round" />
+  <line x1="0.0" y1="140.0" x2="0.0" y2="0.0" stroke="#2d8cf0" stroke-width="1.0" stroke-linecap="round" />
+  <!-- Component Placements (Bottom Layer) -->
+  <text x="147.5" y="145.0" font-family="sans-serif" font-size="4" font-weight="bold" fill="#2d8cf0" text-anchor="middle">LR-P3A Rev 6.3 — Assembly Drawing (Bottom Layer)</text>
+</svg>

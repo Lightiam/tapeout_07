@@ -1,0 +1,8 @@
+Designators,Quantity,Manufacturer Part Number,Value,Footprint
+"FID1,FID2,FID3",3,"","Fiducial","Fiducial_1.0mm_Mask2.0mm"
+"H1,H2,H3,H4",4,"","MountingHole_3.2mm_M3","MountingHole_3.2mm_M3"
+"J1,J2,J3,J4",4,"132289","SMA","SMA_Amphenol_132289_EdgeLaunch"
+"U1",1,"TFLN-MZM-400G-C","TFLN-MZM-400G-C","TFLN_MZM_15mm"
+"U2",1,"TLN-1550-100","TLN-1550-100","DFB_Laser_TO_Can"
+"U3",1,"XPDV4120R","XPDV4120R","Finisar_XPDV4120R"
+"U4",1,"HMC8410","HMC8410","QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm"
