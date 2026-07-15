@@ -52,7 +52,7 @@ def make_tfln(ref,cx,cy,suffix):
     per=(len(pins)+1)//2
     for idx,(pn,base) in enumerate(pins):
         row=idx//per; col=idx%per
-        x=cx+(col-(per-1)/2)*(15.0/per); y=cy+(row-0.5)*4.0
+        x=(col-(per-1)/2)*(15.0/per); y=(row-0.5)*4.0
         pad=pcbnew.PAD(fp); pad.SetShape(pcbnew.PAD_SHAPE_ROUNDRECT); pad.SetAttribute(pcbnew.PAD_ATTRIB_SMD)
         pad.SetSize(VECTOR2I(mm(0.3),mm(1.2))); pad.SetLayerSet(pad.SMDMask())
         pad.SetPosition(VECTOR2I(mm(x),mm(y))); pad.SetName(str(idx+1))
@@ -65,7 +65,7 @@ def make_tfln(ref,cx,cy,suffix):
     # optical keep-out: 2.54mm copper-free zone around the TFLN facet (represent as F.CrtYd rect + doc)
     ko=pcbnew.ZONE(B)
     ko.SetLayer(pcbnew.F_Cu)
-    ko.SetIsRuleArea(True); ko.SetDoNotAllowCopperPour(True); ko.SetDoNotAllowTracks(True); ko.SetDoNotAllowVias(True)
+    ko.SetIsRuleArea(True); ko.SetDoNotAllowZoneFills(True); ko.SetDoNotAllowTracks(False); ko.SetDoNotAllowVias(False)
     pts2=[(cx-9,cy-6),(cx+9,cy-6),(cx+9,cy+6),(cx-9,cy+6)]
     poly=pcbnew.wxPoint if False else None
     ch=ko.Outline()
